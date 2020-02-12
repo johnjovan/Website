@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400");
+
+body {
+  padding: 0;
+  margin: 0;
+  background: black;
+}
+
+nav {
+  max-width: 1400px;
+  margin: auto;
+  padding: 10px;
+  height: 70px;
+  background: black;
+  line-height: 35px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border-radius: 4px;
+}
+
+nav span a {
+  position: relative;
+  top: 15px;
+  left: 20px;
+}
+
+nav span a img {
+  background-color: white;
+  background-size: cover;
+}
+
+nav ul {
+  float: right;
+  font-size: 16px;
+  font-weight: 1000;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 30px 0 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu .fa.fa-search {
+  font-size: 20px;
+}
+
+.menu .fa.fa-sign-in {
+  font-size: 20px;
+}
+
+.menu ul li a.menu-item {
+  transform: scale(1);
+  transition: 0.5s;
+  display: block;
+}
+
+.menu ul li a.menu-item.hide-item {
+  transform: scale(0);
+}
+
+.menu ul li:nth-child(1) a.menu-item.hide-item {
+  transition-delay: 0.5s;
+}
+
+.menu ul li:nth-child(2) a.menu-item.hide-item {
+  transition-delay: 0.4s;
+}
+
+.menu ul li:nth-child(3) a.menu-item.hide-item {
+  transition-delay: 0.3s;
+}
+
+.menu ul li:nth-child(4) a.menu-item.hide-item {
+  transition-delay: 0.2s;
+}
+
+.menu ul li:nth-child(5) a.menu-item.hide-item {
+  transition-delay: 0.1s;
+}
+
+.menu ul li:nth-child(6) a.menu-item.hide-item {
+  transition-delay: 0s;
+}
+
+.menu ul li:nth-child(1) a.menu-item {
+  transition-delay: 0s;
+}
+
+.menu ul li:nth-child(2) a.menu-item {
+  transition-delay: 0.1s;
+}
+
+.menu ul li:nth-child(3) a.menu-item {
+  transition-delay: 0.2s;
+}
+
+.menu ul li:nth-child(4) a.menu-item {
+  transition-delay: 0.3s;
+}
+
+.menu ul li:nth-child(5) a.menu-item {
+  transition-delay: 0.4s;
+}
+
+.menu ul li:nth-child(6) a.menu-item {
+  transition-delay: 0.5s;
+}
+
+.search-form {
+  position: absolute;
+  top: 8px;
+  left: 55%;
+  transform: translateX(0);
+  width: 600px;
+  height: 60px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.search-form.active {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+  transform: translateX(-50%);
+}
+
+.search-form input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 25px;
+}
+
+.search-form input::placeholder {
+  color: #fff;
+}
+
+.search-form::before {
+  content: "\f002";
+  position: absolute;
+  top: 12px;
+  left: -26px;
+  font-size: 18px;
+  color: #fff;
+  font-family: fontAwesome;
+}
+
+.close {
+  position: absolute;
+  right: 34%;
+  top: 0;
+  height: 44px;
+  color: #fff;
+  line-height: 30px;
+  font-size: 18px;
+  text-align: right;
+  width: 20px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0s;
+  transform: translateX(0);
+}
+
+nav .close.active {
+  transition-delay: 0.6s;
+}
+
+.close.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+#content1 {
+  background-image: url("../Images/converse.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1000px;
+  width: 100%;
+}
+
+#section1 {
+  padding: 70px 30px;
+}
+
+#section1 h1 {
+  font-size: 78px;
+  font-weight: bold;
+  color: white;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.elementor-widget-wrap {
+  border-bottom: 3px solid rgb(182, 55, 193);
+  width: 15%;
+}
+
+#gts {
+  color: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 14px 30px;
+  font-size: 16px bold;
+  font-family: "montserrat"sans-serif;
+  letter-spacing: 2px;
+  text-decoration: none;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, .5);
+  left: 114px;
+  overflow: hidden;
+}
+
+#gts:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -50%;
+  background: rgba(255, 255, 255, 0.08);
+  transition: 0.3s;
+  transition-delay: 0.3s;
+  opacity: 0.7;
+}
+
+#gts:hover::before {
+  left: 100%;
+  opacity: 0.7;
+  background: linear-gradient(to right, #FF9999, #AE00AE);
+}
+
+#gts:hover {
+  color: black;
+  background: linear-gradient(to right, #FF9999, #AE00AE);
+  opacity: 0.7;
+  transition: 0.4s;
+  transition-delay: 0.4s;
+}
+
+#gts span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, #FF9999, #F01EF0);
+  animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+#gts span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom, #FF9999, #F01EF0);
+  animation: animate2 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+#gts span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to left, #FF9999, #F01EF0);
+  animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+#gts span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to top, #FF9999, #F01EF0);
+  animation: animate4 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate4 {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+#ittc {
+  margin: 20px;
+  padding: 0;
+  font-size: 45px;
+  font-family: serif;
+  text-transform: uppercase;
+}
+
+#ittc span {
+  display: inline-flex;
+  color: #F01EF0;
+}
+
+#ittc span:nth-child(even) {
+  overflow: hidden;
+  transition: ease-in-out 0.5s;
+  color: white;
+  border-bottom: 4px solid #F01EF0;
+  letter-spacing: -1em;
+}
+
+#ittc:hover span:nth-child(even) {
+  letter-spacing: 0;
+}
+
+#ittc:hover span:nth-child(6) {
+  transition-delay: 0s;
+}
+
+#ittc:hover span:nth-child(8) {
+  transition-delay: 0.5s;
+}
