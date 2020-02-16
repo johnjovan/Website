@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch|Cantarell|Courier+Prime|Days+One|Fredericka+the+Great|Fredoka+One|Monoton|Shojumaru|Syncopate|Titan+One&display=swap');
+
+/* FONT STYLE
+font-family: 'Cabin Sketch', cursive;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Courier Prime', monospace;
+font-family: 'Cantarell', sans-serif;
+font-family: 'Monoton', cursive;
+font-family: 'Days One', sans-serif;
+font-family: 'Syncopate', sans-serif;
+font-family: 'Shojumaru', cursive;
+font-family: 'Titan One', cursive;
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  font-family: 'Cantarell', sans-serif;
+}
+
+header {
+  position: sticky;
+  position: -webkit-sticky;
+  max-width: 1400px;
+  margin: 20px auto;
+  padding: 10px;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 4px;
+  height: 70px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  top: 0;
+}
+
+.logo img {
+  background: white;
+  border-radius: 2px;
+  font-size: 36px;
+  padding: 0 10px;
+  float: left;
+  margin: 5px 0;
+}
+
+nav {
+  float: right;
+  font-weight: bold;
+}
+
+.clearfix {
+  clear: both;
+}
+
+nav ul {
+  display: flex;
+  line-height: 20px;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 30px 0 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: large;
+  font-family: 'Courier Prime', monospace;
+}
+
+nav .fa.fa-search {
+  font-size: 20px;
+  line-height: 10px;
+}
+
+nav .fa.fa-sign-in {
+  font-size: 20px;
+  line-height: 10px;
+}
+
+nav ul li a.menu-item {
+  transform: scale(1);
+  transition: 0.5s;
+  display: block;
+}
+
+nav ul li a.menu-item.hide-item {
+  transform: scale(0);
+}
+
+nav ul li:nth-child(1) a.menu-item.hide-item {
+  transition-delay: 0.5s;
+}
+
+nav ul li:nth-child(2) a.menu-item.hide-item {
+  transition-delay: 0.4s;
+}
+
+nav ul li:nth-child(3) a.menu-item.hide-item {
+  transition-delay: 0.35s;
+}
+
+nav ul li:nth-child(4) a.menu-item.hide-item {
+  transition-delay: 0.2s;
+}
+
+nav ul li:nth-child(5) a.menu-item.hide-item {
+  transition-delay: 0.1s;
+}
+
+nav ul li:nth-child(6) a.menu-item.hide-item {
+  transition-delay: 0s;
+}
+
+nav ul li:nth-child(1) a.menu-item {
+  transition-delay: 0s;
+}
+
+nav ul li:nth-child(2) a.menu-item {
+  transition-delay: 0.1s;
+}
+
+nav ul li:nth-child(3) a.menu-item {
+  transition-delay: 0.2s;
+}
+
+nav ul li:nth-child(4) a.menu-item {
+  transition-delay: 0.3s;
+}
+
+nav ul li:nth-child(5) a.menu-item {
+  transition-delay: 0.4s;
+}
+
+nav ul li:nth-child(6) a.menu-item {
+  transition-delay: 0.5s;
+}
+
+nav ul li a.menu-item:hover {
+  transition-delay: 0s;
+  color: white;
+  background: black;
+}
+
+.search-form {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(0);
+  width: 450px;
+  height: 60px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.search-form.active {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+  transform: translateX(-50%);
+}
+
+.search-form input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  color: black;
+  border: none;
+  outline: none;
+  font-size: 25px;
+}
+
+.search-form input::placeholder {
+  color: black;
+}
+
+.search-form::before {
+  content: "\f002";
+  position: absolute;
+  top: 12px;
+  left: -26px;
+  font-size: 18px;
+  color: black;
+  font-family: fontAwesome;
+}
+
+.close {
+  position: absolute;
+  right: 34%;
+  top: 0;
+  height: 44px;
+  color: black;
+  line-height: 30px;
+  font-size: 18px;
+  text-align: right;
+  width: 20px;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0s;
+  transform: translateX(0);
+}
+
+nav .close.active {
+  transition-delay: 0.6s;
+}
+
+.close.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media (max-width: 1200px) {
+  header {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 913px) {
+  .menu-toggle {
+    display: block;
+    width: 40px;
+    height: 40px;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+    color: darkmagenta;
+  }
+
+  .menu-toggle::before {
+    content: '\f0c9';
+    font-family: fontAwesome;
+    position: relative;
+    top: 5px;
+    right: 5px;
+  }
+
+  .menu-toggle.active::before {
+    content: '\f00d';
+  }
+
+  header {
+    height: auto;
+    width: auto;
+    padding: 10px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.active {
+    display: block;
+    width: 100%;
+  }
+
+  nav.active ul {
+    /* display: block; */
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav.active ul li a {
+    margin: 0;
+    padding: 10px;
+    background: white;
+
+  }
+}
+
+#container1 {
+  background: white;
+}
