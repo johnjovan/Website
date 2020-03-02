@@ -19,9 +19,9 @@ $(document).ready(function () {
   $(".menu-toggle").click(function () {
     $(".menu-toggle").toggleClass("active");
     $("nav").toggleClass("active");
-    // NOT FINISH //
+    //! NOT FINISH //
     $(".icon").hide();
-  }); // NOT FINISH //
+  }); //! NOT FINISH //
   $("#bar").click(function () {
     $(".icon").show();
   });
