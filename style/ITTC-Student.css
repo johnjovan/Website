@@ -144,7 +144,7 @@ nav ul li:nth-child(6) a.menu-item {
 }
 
 nav ul li a.menu-item:hover {
-  transition-delay: 0s;
+  transition-delay: 0.1s;
   color: white;
   background: black;
 }
