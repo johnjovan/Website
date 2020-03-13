@@ -60,6 +60,7 @@ header {
   box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
   top: 0;
   background: black;
+  z-index: 1;
 }
 
 .logo img {
@@ -89,17 +90,52 @@ nav ul {
 nav ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 0 20px 0 0;
+  padding: 0 30px 0 0;
 
 }
 
 nav ul li a {
-  padding: 5px 10px;
+  padding: 10px 0;
   text-decoration: none;
   color: white;
   font-size: large;
   font-family: 'Courier Prime', monospace;
 }
+
+/*+ NEW CSS */
+
+nav ul li a#active span#shome {
+  position: relative;
+  left: 0;
+  top: -5px;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, black, rgb(24, 23, 23), rgb(63, 61, 61), gray, white);
+  /* background: linear-gradient(to right, white, gray, rgb(63, 61, 61), black); */
+}
+
+nav ul li a.menu-item span {
+  position: absolute;
+  bottom: 13px;
+  left: -100.5%;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, black, rgb(24, 23, 23), rgb(63, 61, 61), gray, white);
+  /* background: linear-gradient(to right, white, gray, rgb(63, 61, 61), black); */
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  transition: 1s ease-out;
+  overflow: hidden;
+}
+
+nav ul li a.menu-item:hover span {
+  left: 0;
+  transition: .2s ease-in;
+}
+
+/*+ END NEW CSS */
 
 nav .fa.fa-search {
   color: white;
@@ -118,6 +154,7 @@ nav ul li a.menu-item {
   transform: scale(1);
   transition: 0.5s;
   display: block;
+  overflow: hidden;
 }
 
 nav ul li a.menu-item.hide-item {
@@ -245,6 +282,47 @@ nav .close.active {
   visibility: visible;
 }
 
+/* TODO Later */
+
+#section1 section {
+  padding: 70px 30px;
+}
+
+#section1 section #container1 span {
+  position: absolute;
+  background: pink;
+  height: 3px;
+  width: 75px;
+}
+
+#container1 {
+  color: white;
+}
+
+/* TODO Later */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1200px) {
   header {
     margin: 20px;
@@ -302,8 +380,4 @@ nav .close.active {
     background: black;
 
   }
-}
-
-#container1 {
-  color: white;
 }
