@@ -39,11 +39,12 @@ body {
   font-family: 'Cantarell', sans-serif;
 }
 
-section {
+/*!  Section 1  !*/
+#section1 {
   background: url("../Images/converse.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 120vh;
+  height: 130vh;
   position: relative;
   top: -20px;
 }
@@ -126,7 +127,7 @@ nav ul li a.menu-item span {
   /* background: linear-gradient(to right, white, gray, rgb(63, 61, 61), black); */
   transition: 0.5s;
   transition-delay: 0.5s;
-  transition: 1s ease-out;
+  transition: .4s ease-out;
   overflow: hidden;
 }
 
@@ -284,8 +285,12 @@ nav .close.active {
 
 /* TODO Later */
 
-#section1 section {
+#section-1-1 {
   padding: 70px 30px;
+}
+
+#section1 section #container1 {
+  background: transparent;
 }
 
 #section1 section #container1 span {
@@ -295,13 +300,26 @@ nav .close.active {
   width: 75px;
 }
 
+#section1 #section-1-1 {
+  color: white
+}
+
 #container1 {
   color: white;
 }
 
 /* TODO Later */
 
+/*!  END Section 1  !*/
 
+
+/*+  Section 2  +*/
+
+#section2 {
+  color: white;
+}
+
+/*+  END Section 2  +*/
 
 
 
