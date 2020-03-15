@@ -1,17 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin+Sketch|Cantarell|Courier+Prime|Days+One|Fredericka+the+Great|Fredoka+One|Monoton|Shojumaru|Syncopate|Titan+One&display=swap');
-
-/* FONT STYLE
-font-family: 'Cabin Sketch', cursive;
-font-family: 'Fredericka the Great', cursive;
-font-family: 'Fredoka One', cursive;
-font-family: 'Courier Prime', monospace;
-font-family: 'Cantarell', sans-serif;
-font-family: 'Monoton', cursive;
-font-family: 'Days One', sans-serif;
-font-family: 'Syncopate', sans-serif;
-font-family: 'Shojumaru', cursive;
-font-family: 'Titan One', cursive;
-*/
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Baloo+Chettan+2|Baloo+Da+2|Baloo+Thambi+2|Cinzel|Libre+Baskerville|Nanum+Myeongjo|Poppins|Quicksand|Raleway|Rubik|Sen&display=swap');
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -289,16 +277,159 @@ nav .close.active {
   padding: 70px 30px;
 }
 
-#section1 section #container1 {
-  background: transparent;
+#section-1-1 #container1 {
+  padding: 70px 30px;
 }
 
-#section1 section #container1 span {
+#section-1-1 #container1 #line span {
   position: absolute;
-  background: pink;
+  top: -30px;
+  background: rgb(233, 32, 79);
   height: 3px;
-  width: 75px;
+  width: 80px;
 }
+
+#section-1-1 #container1 div h2 {
+  position: relative;
+  font-size: 90px;
+  font-weight: bolder;
+  word-spacing: 10px;
+  font-family: san;
+}
+
+/*+  Getting Started Button  +*/
+
+#section-1-1 #container1 #gts-btn {
+  position: relative;
+  left: 100px;
+}
+
+#section-1-1 #container1 #gts-btn a {
+  position: absolute;
+  top: 40px;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Cabin Sketch', cursive;
+  word-spacing: 4px;
+  letter-spacing: .5px;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+  box-shadow: 0 5px 40px rgb(20, 20, 20);
+  overflow: hidden;
+}
+
+/* TODO Later */
+
+#section-1-1 #container1 #gts-btn a:before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.08);
+  transition: 0.3s;
+  transition-delay: 0.3s;
+  opacity: 0.7;
+}
+
+#section-1-1 #container1 #gts-btn a:hover {
+  background: rgb(233, 32, 79);
+  transition: .5s ease-in-out;
+}
+
+#section-1-1 #container1 #gts-btn a:hover:before {
+  display: none;
+}
+
+/* TODO Later END */
+
+#section-1-1 #container1 #gts-btn a span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, black, rgb(24, 23, 23), rgb(63, 61, 61), gray, white);
+  animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+#section-1-1 #container1 #gts-btn a span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, black, rgb(24, 23, 23), rgb(63, 61, 61), gray, white);
+  animation: animate2 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate2 {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+#section-1-1 #container1 #gts-btn a span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, black, rgb(24, 23, 23), rgb(63, 61, 61), gray, white);
+  animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+#section-1-1 #container1 #gts-btn a span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top, black, rgb(24, 23, 23), rgb(63, 61, 61), gray, white);
+  animation: animate4 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate4 {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/*+  END Getting Started Button  +*/
 
 #section1 #section-1-1 {
   color: white
