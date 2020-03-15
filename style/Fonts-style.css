@@ -1,42 +1,52 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin+Sketch|Cantarell|Courier+Prime|Days+One|Fredericka+the+Great|Fredoka+One|Monoton|Shojumaru|Syncopate|Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Baloo+Chettan+2|Baloo+Da+2|Baloo+Thambi+2|Cinzel|Libre+Baskerville|Nanum+Myeongjo|Poppins|Quicksand|Raleway|Rubik|Sen&display=swap');
 
 /* TEXT 1 */
-#font1{
-font-family: 'Cabin Sketch', cursive;
+#font1 {
+  font-family: 'Cabin Sketch', cursive;
 }
+
 /* TEXT 2 */
-#font2{
-font-family: 'Fredericka the Great', cursive;
+#font2 {
+  font-family: 'Fredericka the Great', cursive;
 }
+
 /* TEXT 3 */
-#font3{
-font-family: 'Fredoka One', cursive;
+#font3 {
+  font-family: 'Fredoka One', cursive;
 }
+
 /* TEXT 4 */
-#font4{
-font-family: 'Courier Prime', monospace;
+#font4 {
+  font-family: 'Courier Prime', monospace;
 }
+
 /* TEXT 5 */
-#font5{
-font-family: 'Cantarell', sans-serif;
+#font5 {
+  font-family: 'Cantarell', sans-serif;
 }
+
 /* TEXT 6 */
-#font6{
-font-family: 'Monoton', cursive;
+#font6 {
+  font-family: 'Monoton', cursive;
 }
+
 /* TEXT 7 */
-#font7{
-font-family: 'Days One', sans-serif;
+#font7 {
+  font-family: 'Days One', sans-serif;
 }
+
 /* TEXT 8 */
-#font8{
-font-family: 'Syncopate', sans-serif;
+#font8 {
+  font-family: 'Syncopate', sans-serif;
 }
+
 /* TEXT 9 */
-#font9{
-font-family: 'Shojumaru', cursive;
+#font9 {
+  font-family: 'Shojumaru', cursive;
 }
+
 /* TEXT 10 */
-#font10{
+#font10 {
   font-family: 'Titan One', cursive;
 }
