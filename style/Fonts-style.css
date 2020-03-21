@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin+Sketch|Cantarell|Courier+Prime|Days+One|Fredericka+the+Great|Fredoka+One|Monoton|Shojumaru|Syncopate|Titan+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Baloo+Chettan+2|Baloo+Da+2|Baloo+Thambi+2|Cinzel|Libre+Baskerville|Nanum+Myeongjo|Poppins|Quicksand|Raleway|Rubik|Sen&display=swap');
 
+.row {
+  padding: 20px 0;
+  background-color: cornsilk;
+}
+
+.row p {
+  color: orange;
+  background: black;
+  font-size: 24px;
+  text-align: center;
+}
+
 /* TEXT 1 */
 #font1 {
   font-family: 'Cabin Sketch', cursive;
@@ -49,4 +61,64 @@
 /* TEXT 10 */
 #font10 {
   font-family: 'Titan One', cursive;
+}
+
+/* TEXT 11 */
+#font11 {
+  font-family: 'Baloo Chettan 2', cursive;
+}
+
+/* TEXT 12 */
+#font12 {
+  font-family: 'Baloo Thambi 2', cursive;
+}
+
+/* TEXT 13 */
+#font13 {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* TEXT 14 */
+#font14 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* TEXT 15 */
+#font15 {
+  font-family: 'Rubik', sans-serif;
+}
+
+/* TEXT 16 */
+#font16 {
+  font-family: 'Sen', sans-serif;
+}
+
+/* TEXT 17 */
+#font17 {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* TEXT 18 */
+#font18 {
+  font-family: 'Baloo Da 2', cursive;
+}
+
+/* TEXT 19 */
+#font19 {
+  font-family: 'Libre Baskerville', serif;
+}
+
+/* TEXT 20 */
+#font20 {
+  font-family: 'Cinzel', serif;
+}
+
+/* TEXT 21 */
+#font21 {
+  font-family: 'Alfa Slab One', cursive;
+}
+
+/* TEXT 22 */
+#font22 {
+  font-family: 'Nanum Myeongjo', serif;
 }
