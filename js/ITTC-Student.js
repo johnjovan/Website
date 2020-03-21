@@ -27,7 +27,8 @@ $(document).ready(function () {
   });
 });
 
-
 function resettext() {
   document.getElementById("myform").reset();
 }
+
+AOS.init();

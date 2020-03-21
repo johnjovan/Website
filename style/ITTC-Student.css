@@ -8,14 +8,14 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: linear-gradient(white, gray, #242323, black);
+  background: linear-gradient(white, gray, #242323, black, #242323, gray, white);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(white, gray, #242323, black);
+  background: linear-gradient(gray, #242323, black, black, #242323, gray);
 }
 
-html {
+* {
   padding: 0;
   margin: 0;
 }
@@ -23,25 +23,26 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #242323;
+  /* background: #242323; */
+  background: black;
   font-family: 'Cantarell', sans-serif;
 }
 
 /*!  Section 1  !*/
 #section1 {
   background: url("../Images/converse.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 130vh;
-  position: relative;
-  top: -20px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
 }
 
 header {
   position: sticky;
   position: -webkit-sticky;
   max-width: 1400px;
-  margin: 20px auto;
+  margin: auto;
   padding: 8px;
   box-sizing: border-box;
   border-radius: 4px;
@@ -277,7 +278,7 @@ nav .close.active {
 /* TODO Later */
 
 #section-1-1 {
-  padding: 70px 30px;
+  padding: 90px 30px;
 }
 
 #section-1-1 #container1 {
@@ -484,12 +485,6 @@ nav .close.active {
 
 /*+  END Getting Started Button  +*/
 
-#section1 #section-1-2 {
-  position: absolute;
-  width: 100%;
-  padding: 70px 30px;
-}
-
 /*!  END Section 1  !*/
 
 /** ==================== **/
@@ -497,15 +492,62 @@ nav .close.active {
 /*+  Section 2  +*/
 
 #section2 {
-  background: red;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  position: relative;
-  top: -20px;
-  color: black;
+  background: #242323;
+  height: 140vh;
+  color: white;
 }
 
+#section2 #section2-1 {
+  position: relative;
+  top: -100px;
+  width: 100%;
+  height: 40%;
+  padding: 30px 0;
+  background: black;
+}
+
+#section2 #section2-1 .container {
+  position: relative;
+  background: black;
+  top: -20px;
+  opacity: .7;
+}
+
+#section2 #section2-1 .container .row {
+  position: absolute;
+  left: 250px;
+}
+
+/* + MAKE IT CENTER */
+#section2 #section2-1 .row i {
+  font-size: 40px;
+  color: white;
+  align-items: center;
+  color: white;
+}
+
+#section2-1 #mission {
+  color: white;
+  width: 50%;
+  padding: 10px 30px;
+}
+
+#section2-1 #vision {
+  color: white;
+  width: 50%;
+  padding: 10px 30px;
+}
+
+#section2 #section2-1 .container h1 {
+  font-size: 78px;
+  font-weight: bolder;
+  word-spacing: 10px;
+  font-family: san;
+}
+
+#section2 #section2-1 .container p {
+  font-family: 'Libre Baskerville', serif;
+}
 
 
 
