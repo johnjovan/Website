@@ -92,8 +92,6 @@ nav ul li a {
   font-family: 'Courier Prime', monospace;
 }
 
-/*+ NEW CSS */
-
 nav ul li a#active span#shome {
   position: relative;
   left: 0;
@@ -102,7 +100,6 @@ nav ul li a#active span#shome {
   width: 100%;
   height: 2px;
   background: linear-gradient(to right, black, rgb(24, 23, 23), rgb(63, 61, 61), gray, white);
-  /* background: linear-gradient(to right, white, gray, rgb(63, 61, 61), black); */
 }
 
 nav ul li a.menu-item span {
@@ -113,10 +110,11 @@ nav ul li a.menu-item span {
   width: 100%;
   height: 2px;
   background: linear-gradient(to right, black, rgb(24, 23, 23), rgb(63, 61, 61), gray, white);
-  /* background: linear-gradient(to right, white, gray, rgb(63, 61, 61), black); */
   transition: 0.5s;
   transition-delay: 0.5s;
   transition: .4s ease-out;
+  transition-duration: 750ms;
+  transition-timing-function: cubic-bezier(0.16, 1.10, 1, .9);
   overflow: hidden;
 }
 
@@ -127,8 +125,6 @@ nav ul li a.menu-item:hover span {
   transition-duration: 750ms;
   transition-timing-function: cubic-bezier(0.16, 1.10, 1, .9);
 }
-
-/*+ END NEW CSS */
 
 nav .fa.fa-search {
   color: white;
@@ -275,7 +271,7 @@ nav .close.active {
   visibility: visible;
 }
 
-/* TODO Later */
+/*+  Section-1-1  */
 
 #section-1-1 {
   padding: 90px 30px;
@@ -288,7 +284,7 @@ nav .close.active {
 #section-1-1 #container1 #line span {
   position: absolute;
   top: -30px;
-  background: rgb(233, 32, 79);
+  background: linear-gradient(to top left, #cc99ff 0%, #ff99cc 100%);
   height: 3px;
   width: 80px;
 }
@@ -326,33 +322,6 @@ nav .close.active {
   overflow: hidden;
 }
 
-/* TODO Later */
-/* 
-#section-1-1 #container1 #gts-btn a:before {
-  content: '';
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(255, 255, 255, 0.08);
-  transition: 0.3s;
-  transition-delay: 0.3s;
-  opacity: 0.7;
-}
-
-#section-1-1 #container1 #gts-btn a:hover {
-  background: rgb(233, 32, 79);
-  transition: .5s ease-in-out;
-}
-
-#section-1-1 #container1 #gts-btn a:hover:before {
-  display: none;
-  transition: 1s ease-out;
-} */
-
-/*+  TEST  +*/
-
 #section-1-1 #container1 #gts-btn a:before {
   content: '';
   position: absolute;
@@ -360,19 +329,17 @@ nav .close.active {
   height: 100%;
   top: 0;
   left: -100%;
-  background: rgb(233, 32, 79);
-  /* transition: 250ms ease-in;
-  transition-delay: .3s; */
+  /* background: rgb(233, 32, 79); */
+  background: linear-gradient(to top left, #cc99ff 0%, #ff99cc 100%);
   transition: 750ms ease-in;
-  transition-duration: 400ms;
+  transition-duration: 750ms;
   transition-timing-function: cubic-bezier(0.16, 1.10, 1, .9);
 }
 
 #section-1-1 #container1 #gts-btn a:hover:before {
   left: 0;
-  /* transition: 250ms ease-out; */
   transition: 750ms ease-in;
-  transition-duration: 400ms;
+  transition-duration: 750ms;
   transition-timing-function: cubic-bezier(0.16, 1.10, 1, .9);
 }
 
@@ -398,8 +365,6 @@ nav .close.active {
   left: -50%;
   transition-duration: 2000ms;
 }
-
-/* TODO Later END */
 
 #section-1-1 #container1 #gts-btn a span:nth-child(1) {
   position: absolute;
@@ -492,8 +457,9 @@ nav .close.active {
 /*+  Section 2  +*/
 
 #section2 {
-  background: #242323;
-  height: 141vh;
+  /* background: #242323; */
+  background: white;
+  height: 137vh;
   color: white;
 }
 
@@ -501,7 +467,7 @@ nav .close.active {
   position: relative;
   top: -100px;
   width: 100%;
-  height: 39%;
+  height: 37%;
   padding: 30px 0;
   background: white;
 }
@@ -513,13 +479,14 @@ nav .close.active {
 
 #section2 #section2-1 .container .row {
   position: absolute;
-  left: 250px;
+  left: 150px;
   height: 100%;
 }
 
 #section2 #section2-1 .row i {
   font-size: 40px;
   color: black;
+  transition: .5s ease-in-out;
 }
 
 #section2-1 .row h1,
@@ -534,10 +501,13 @@ nav .close.active {
   text-align: center;
   padding-right: 60px;
   margin: 0 10px;
-  background: linear-gradient(to right, #ff66ff, #ff80ff, #ff99ff, #ffb3ff);
+  background: linear-gradient(to top left, purple 0%, #cc99ff 50%, #ff99cc 100%);
   background-size: 200%;
   background-position: left;
-  transition: 0.5s ease-in-out;
+  /* transition: 0.5s ease-in-out; */
+  transition: 1000ms ease-in-out;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.16, 1.10, 1, .9);
 }
 
 #section2-1 #vision {
@@ -547,10 +517,13 @@ nav .close.active {
   text-align: center;
   padding-left: 60px;
   margin: 0 10px;
-  background: linear-gradient(to right, #ff66ff, #ff80ff, #ff99ff, #ffb3ff);
+  background: linear-gradient(to top left, purple 0%, #cc99ff 50%, #ff99cc 100%);
   background-size: 200%;
   background-position: left;
-  transition: 0.5s ease-in-out;
+  /* transition: 0.5s ease-in-out; */
+  transition: 1000ms ease-in-out;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.16, 1.10, 1, .9);
 }
 
 #section2-1 #mission:hover {
@@ -563,6 +536,15 @@ nav .close.active {
   transition: 0.5s ease-in-out;
 }
 
+#section2-1 #mission:hover span i {
+  transform: scale(1.2);
+  transition: .5s ease-in-out;
+}
+
+#section2-1 #vision:hover span i {
+  transform: scale(1.2);
+  transition: .5s ease-in-out;
+}
 
 #section2 #section2-1 .container h1 {
   font-size: 48px;
