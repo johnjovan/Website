@@ -4,15 +4,15 @@
 ::-webkit-scrollbar {
   width: 8px;
   height: 30px;
-  background-color: red;
 }
 
 ::-webkit-scrollbar-track {
-  background: linear-gradient(white, gray, #242323, black, #242323, gray, white);
+  background: white;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(gray, #242323, black, black, #242323, gray);
+  background: linear-gradient(transparent, #242323, black, black);
+  border-radius: 6px;
 }
 
 * {
@@ -298,7 +298,7 @@ nav .close.active {
   color: white;
 }
 
-/*+  Getting Started Button  +*/
+/*+  Getting St,transparent, arted Button  +*/
 
 #section-1-1 #container1 #gts-btn {
   position: relative;
@@ -457,11 +457,13 @@ nav .close.active {
 /*+  Section 2  +*/
 
 #section2 {
-  /* background: #242323; */
-  background: white;
+  background: #242323;
+  /* background: white; */
   height: 137vh;
   color: white;
 }
+
+/*=  Section2-1  =*/
 
 #section2 #section2-1 {
   position: relative;
@@ -469,7 +471,7 @@ nav .close.active {
   width: 100%;
   height: 37%;
   padding: 30px 0;
-  background: white;
+  background: black;
 }
 
 #section2 #section2-1 .container {
@@ -558,7 +560,124 @@ nav .close.active {
   font-size: 16px;
 }
 
+/*=  End Section2-1 =*/
 
+/*?  Section2-2  ?*/
+
+#sectoin2-2 #students {
+  position: relative;
+  top: -80px;
+  width: 100%;
+  float: left;
+}
+
+#sectoin2-2 #students .container h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  word-spacing: 10px;
+  font-family: san;
+  margin: 18px 18px 18px 0;
+}
+
+#sectoin2-2 #profile #Lilian {
+  background-image: url("../Images/st01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .8;
+  height: 70vh;
+  margin: 20px 10px;
+}
+
+#sectoin2-2 #profile #Jovan {
+  background-image: url("../Images/st02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .8;
+  height: 70vh;
+  margin: 20px 10px;
+}
+
+#sectoin2-2 #profile #Scepter {
+  background-image: url("../Images/st03.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: .8;
+  height: 70vh;
+  margin: 20px 10px;
+}
+
+/* TODO LATER */
+#sectoin2-2 #profile #Lilian:hover {
+  background: scale(1.5);
+  opacity: 1;
+}
+
+#sectoin2-2 #profile #Jovan:hover {
+  background: scale(1.5);
+  opacity: 1;
+}
+
+#sectoin2-2 #profile #Scepter:hover {
+  background: scale(1.5);
+  opacity: 1;
+}
+
+/* TODO */
+/* #sectoin2-2 #students {
+  color: black;
+  background: black;
+  height: 70vh;
+  border: 2px solid black;
+}
+
+#students .swiper-container {
+  width: 100%;
+  height: 100%;
+} */
+
+/* #students .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff; */
+
+/* Center slide text vertically */
+/* display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+} */
+
+/* #students .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: green;
+  opacity: 1;
+  background: transparent;
+  border: 1px solid gray;
+} */
+
+/* #students .swiper-pagination-bullet-active {
+  color: white;
+  background: linear-gradient(to top left, purple 0%, #cc99ff 50%, #ff99cc 100%);
+} */
+
+/* #sectoin2-2 #students #Lilian {
+  background: red;
+} */
+/* TODO */
+
+/*?  End Section2-2  ?*/
 
 
 
