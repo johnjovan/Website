@@ -579,6 +579,24 @@ nav .close.active {
   margin: 18px 18px 18px 0;
 }
 
+#sectoin2-2 #profile ul li {
+  list-style-type: none;
+}
+
+#sectoin2-2 #profile ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 6px 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+#sectoin2-2 #profile .index {
+  padding: 8px 10px;
+  border: 1px solid black;
+  border-radius: 0;
+}
+
 #sectoin2-2 #profile #Lilian {
   background-image: url("../Images/st01.jpg");
   background-size: cover;
@@ -586,6 +604,23 @@ nav .close.active {
   opacity: .8;
   height: 70vh;
   margin: 20px 10px;
+  padding: 0;
+  overflow: hidden;
+}
+
+#sectoin2-2 #profile #Lilian #lilian-account {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(to top left, purple 0%, #cc99ff 50%, #ff99cc 100%);
+  height: 172px;
+  color: black;
+  bottom: -73%;
+  transition: .5s ease-in-out;
+}
+
+#sectoin2-2 #profile #Lilian:hover #lilian-account {
+  bottom: -63%;
+  transition: .5s ease-in-out;
 }
 
 #sectoin2-2 #profile #Jovan {
@@ -595,6 +630,23 @@ nav .close.active {
   opacity: .8;
   height: 70vh;
   margin: 20px 10px;
+  padding: 0;
+  overflow: hidden;
+}
+
+#sectoin2-2 #profile #Jovan #jovan-account {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(to top left, purple 0%, #cc99ff 50%, #ff99cc 100%);
+  height: 172px;
+  color: black;
+  bottom: -73%;
+  transition: .5s ease-in-out;
+}
+
+#sectoin2-2 #profile #Jovan:hover #jovan-account {
+  bottom: -63%;
+  transition: .5s ease-in-out;
 }
 
 #sectoin2-2 #profile #Scepter {
@@ -604,6 +656,23 @@ nav .close.active {
   opacity: .8;
   height: 70vh;
   margin: 20px 10px;
+  padding: 0;
+  overflow: hidden;
+}
+
+#sectoin2-2 #profile #Scepter #scepter-account {
+  position: relative;
+  text-align: center;
+  background: linear-gradient(to top left, purple 0%, #cc99ff 50%, #ff99cc 100%);
+  height: 172px;
+  color: black;
+  bottom: -73%;
+  transition: .5s ease-in-out;
+}
+
+#sectoin2-2 #profile #Scepter:hover #scepter-account {
+  bottom: -63%;
+  transition: .5s ease-in-out;
 }
 
 /* TODO LATER */
