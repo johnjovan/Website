@@ -15,6 +15,10 @@
   border-radius: 6px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -631,10 +635,10 @@ nav .close.active {
 #sectoin2-2 #profile #Lilian #lilian-account {
   position: absolute;
   text-align: center;
-  height: 130px;
+  height: 120px;
   width: 100%;
   color: black;
-  bottom: -45px;
+  bottom: -35px;
   transition: .4s ease-in-out;
 }
 
@@ -660,6 +664,11 @@ nav .close.active {
 #sectoin2-2 #profile #Lilian:hover #lilian-account {
   bottom: 0;
   transition: .3s ease-in-out;
+}
+
+#sectoin2-2 #profile #Lilian:hover ul:nth-child(2) {
+  position: relative;
+  top: -10px;
 }
 
 /*+  HOVER ICONS  +*/
@@ -732,10 +741,10 @@ nav .close.active {
 #sectoin2-2 #profile #Jovan #jovan-account {
   position: absolute;
   text-align: center;
-  height: 130px;
+  height: 120px;
   width: 100%;
   color: black;
-  bottom: -45px;
+  bottom: -35px;
   transition: .4s ease-in-out;
 }
 
@@ -763,8 +772,9 @@ nav .close.active {
   transition: .3s ease-in-out;
 }
 
-#sectoin2-2 #profile #Jovan:hover .work-index {
-  margin-bottom: 0;
+#sectoin2-2 #profile #Jovan:hover ul:nth-child(2) {
+  position: relative;
+  top: -10px;
 }
 
 /*+++  SCEPTER  +++*/
@@ -784,10 +794,10 @@ nav .close.active {
 #sectoin2-2 #profile #Scepter #scepter-account {
   position: absolute;
   text-align: center;
-  height: 130px;
+  height: 120px;
   width: 100%;
   color: black;
-  bottom: -45px;
+  bottom: -35px;
   transition: .4s ease-in-out;
 }
 
@@ -815,8 +825,9 @@ nav .close.active {
   transition: .3s ease-in-out;
 }
 
-#sectoin2-2 #profile #Scepter:hover .work-index {
-  margin-bottom: 0;
+#sectoin2-2 #profile #Scepter:hover ul:nth-child(2) {
+  position: relative;
+  top: -10px;
 }
 
 /* TODO LATER */
