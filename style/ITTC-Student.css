@@ -17,6 +17,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-y: scroll;
 }
 
 * {
@@ -605,7 +606,7 @@ nav .close.active {
 }
 
 #sectoin2-2 #profile .fab.fa-facebook-f {
-  padding: 6px 2px;
+  padding: 6px 3px;
 }
 
 #sectoin2-2 #profile .work-index {
@@ -623,6 +624,7 @@ nav .close.active {
   background-image: url("../Images/st01.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   opacity: .8;
   height: 70vh;
   margin: 20px 10px;
@@ -630,6 +632,32 @@ nav .close.active {
   overflow: hidden;
   transform: translate(0%, 0%);
   transition: .3s ease-in-out;
+}
+
+/* TODO LATER */
+/* #sectoin2-2 #profile #Lilian:hover {
+  background-position: center;
+  background-size: 140%;
+  transition: .5s ease-in-out;
+} */
+
+/* TODO LATER */
+#sectoin2-2 #profile #Lilian:hover {
+  transform: scale(.95);
+  opacity: 1;
+  transition: .5s ease-in-out;
+}
+
+#sectoin2-2 #profile #Jovan:hover {
+  transform: scale(.95);
+  opacity: 1;
+  transition: .5s ease-in-out;
+}
+
+#sectoin2-2 #profile #Scepter:hover {
+  transform: scale(.95);
+  opacity: 1;
+  transition: .5s ease-in-out;
 }
 
 #sectoin2-2 #profile #Lilian #lilian-account {
@@ -729,6 +757,7 @@ nav .close.active {
   background-image: url("../Images/st02.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   opacity: .8;
   height: 70vh;
   margin: 20px 10px;
@@ -782,6 +811,7 @@ nav .close.active {
   background-image: url("../Images/st03.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   opacity: .8;
   height: 70vh;
   margin: 20px 10px;
@@ -828,22 +858,6 @@ nav .close.active {
 #sectoin2-2 #profile #Scepter:hover ul:nth-child(2) {
   position: relative;
   top: -10px;
-}
-
-/* TODO LATER */
-#sectoin2-2 #profile #Lilian:hover {
-  background: scale(1.5);
-  opacity: 1;
-}
-
-#sectoin2-2 #profile #Jovan:hover {
-  background: scale(1.5);
-  opacity: 1;
-}
-
-#sectoin2-2 #profile #Scepter:hover {
-  background: scale(1.5);
-  opacity: 1;
 }
 
 /* TODO */
@@ -903,15 +917,18 @@ nav .close.active {
 
 /*?  End Section2-2  ?*/
 
-
-
-
-
 /*+  END Section 2  +*/
 
+/*!  Section 3  !*/
 
+#section3 {
+  height: 100vh;
+  width: 100%;
+  background: white;
+  color: black;
+}
 
-
+/*!  END Section 3  !*/
 
 
 
