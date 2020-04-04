@@ -8,6 +8,7 @@
 
 ::-webkit-scrollbar-track {
   background: white;
+  border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -292,6 +293,7 @@ nav .close.active {
   background: linear-gradient(to top left, #cc99ff 0%, #ff99cc 100%);
   height: 3px;
   width: 80px;
+  border-radius: 6px;
 }
 
 #section-1-1 #container1 div h2 {
@@ -569,47 +571,73 @@ nav .close.active {
 
 /*?  Section2-2  ?*/
 
-#sectoin2-2 #students {
+#section2-2 #students {
   position: relative;
   top: -80px;
   width: 100%;
   float: left;
 }
 
-#sectoin2-2 #students .container h1 {
+#section2-2 #students .container h1 {
   font-size: 48px;
   font-weight: bolder;
   word-spacing: 10px;
   font-family: san;
-  margin: 18px 18px 18px 0;
+  margin: 16px 16px 16px 0;
 }
 
-#sectoin2-2 #profile ul li {
+#section2-2 #students .container span {
+  position: absolute;
+  top: 9px;
+  background: linear-gradient(to top left, #cc99ff 0%, #ff99cc 100%);
+  height: 3px;
+  width: 80px;
+  border-radius: 6px;
+  /* background-size: 200%; */
+}
+
+/*  TODO Animate Span  */
+/* 
+#section2:hover #students .container span {
+  animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+
+  100% {
+    background-position: 200%;
+  }
+} */
+
+#section2:hover #section2-2 #profile ul li {
   list-style-type: none;
 }
 
-#sectoin2-2 #profile ul h5 {
+#section2-2 #profile ul h5 {
   margin: 0;
 }
 
-#sectoin2-2 #profile ul p {
+#section2-2 #profile ul p {
   font-size: 13px;
   color: rgb(88, 88, 88);
   margin-bottom: 5px;
 }
 
-#sectoin2-2 #profile ul li a {
+#section2-2 #profile ul li a {
   text-decoration: none;
   color: white;
   border-radius: 50%;
   padding: 6px 9px;
 }
 
-#sectoin2-2 #profile .fab.fa-facebook-f {
+#section2-2 #profile .fab.fa-facebook-f {
   padding: 6px 3px;
 }
 
-#sectoin2-2 #profile .work-index {
+#section2-2 #profile .work-index {
   background: black;
   color: white;
   padding: 4px 10px;
@@ -619,8 +647,12 @@ nav .close.active {
   transition: .5s ease-in-out;
 }
 
+#section2-2 #profile .work-index:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
 /*+++  LILIAN  +++*/
-#sectoin2-2 #profile #Lilian {
+#section2-2 #profile #Lilian {
   background-image: url("../Images/st01.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -635,32 +667,32 @@ nav .close.active {
 }
 
 /* TODO LATER */
-/* #sectoin2-2 #profile #Lilian:hover {
+/* #section2-2 #profile #Lilian:hover {
   background-position: center;
   background-size: 140%;
   transition: .5s ease-in-out;
 } */
 
 /* TODO LATER */
-#sectoin2-2 #profile #Lilian:hover {
+#section2-2 #profile #Lilian:hover {
   transform: scale(.95);
   opacity: 1;
   transition: .5s ease-in-out;
 }
 
-#sectoin2-2 #profile #Jovan:hover {
+#section2-2 #profile #Jovan:hover {
   transform: scale(.95);
   opacity: 1;
   transition: .5s ease-in-out;
 }
 
-#sectoin2-2 #profile #Scepter:hover {
+#section2-2 #profile #Scepter:hover {
   transform: scale(.95);
   opacity: 1;
   transition: .5s ease-in-out;
 }
 
-#sectoin2-2 #profile #Lilian #lilian-account {
+#section2-2 #profile #Lilian #lilian-account {
   position: absolute;
   text-align: center;
   height: 120px;
@@ -670,7 +702,7 @@ nav .close.active {
   transition: .4s ease-in-out;
 }
 
-#sectoin2-2 #profile #Lilian #lilian-account::before {
+#section2-2 #profile #Lilian #lilian-account::before {
   content: '';
   position: absolute;
   background: linear-gradient(to top left, purple 0%, #cc99ff 50%, #ff99cc 100%);
@@ -683,18 +715,18 @@ nav .close.active {
   z-index: 1;
 }
 
-#sectoin2-2 #profile #Lilian:hover #lilian-account::before {
+#section2-2 #profile #Lilian:hover #lilian-account::before {
   top: 0;
   transition: .2s ease-in-out;
   z-index: -1;
 }
 
-#sectoin2-2 #profile #Lilian:hover #lilian-account {
+#section2-2 #profile #Lilian:hover #lilian-account {
   bottom: 0;
   transition: .3s ease-in-out;
 }
 
-#sectoin2-2 #profile #Lilian:hover ul:nth-child(2) {
+#section2-2 #profile #Lilian:hover ul:nth-child(2) {
   position: relative;
   top: -10px;
 }
@@ -702,58 +734,58 @@ nav .close.active {
 /*+  HOVER ICONS  +*/
 
 /*+++  LILIAN  +++*/
-#sectoin2-2 #profile #Lilian ul:nth-child(2) a:nth-child(1):hover {
+#section2-2 #profile #Lilian ul:nth-child(2) a:nth-child(1):hover {
   background: #4267b2;
   transition: .5s ease-in-out;
 }
 
-#sectoin2-2 #profile #Lilian ul:nth-child(2) a:nth-child(2):hover {
+#section2-2 #profile #Lilian ul:nth-child(2) a:nth-child(2):hover {
   background: #24292e;
   transition: .5s ease-in-out;
 }
 
-#sectoin2-2 #profile #Lilian ul:nth-child(2) a:nth-child(3):hover {
+#section2-2 #profile #Lilian ul:nth-child(2) a:nth-child(3):hover {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   background-image: radial-gradient(circle at 30% 107%, rgb(253, 244, 151) 0%, rgb(253, 244, 151) 5%, rgb(253, 89, 73) 45%, rgb(214, 36, 159) 60%, rgb(40, 90, 235) 90%);
   transition: 1s ease-in-out;
 }
 
 /*+++  JOVAN  +++*/
-#sectoin2-2 #profile #Jovan ul:nth-child(2) a:nth-child(1):hover {
+#section2-2 #profile #Jovan ul:nth-child(2) a:nth-child(1):hover {
   background: #4267b2;
   transition: .5s ease-in-out;
 }
 
-#sectoin2-2 #profile #Jovan ul:nth-child(2) a:nth-child(2):hover {
+#section2-2 #profile #Jovan ul:nth-child(2) a:nth-child(2):hover {
   background: #24292e;
   transition: .5s ease-in-out;
 }
 
-#sectoin2-2 #profile #Jovan ul:nth-child(2) a:nth-child(3):hover {
+#section2-2 #profile #Jovan ul:nth-child(2) a:nth-child(3):hover {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   background-image: radial-gradient(circle at 30% 107%, rgb(253, 244, 151) 0%, rgb(253, 244, 151) 5%, rgb(253, 89, 73) 45%, rgb(214, 36, 159) 60%, rgb(40, 90, 235) 90%);
   transition: 1s ease-in-out;
 }
 
 /*+++  SCEPTER  +++*/
-#sectoin2-2 #profile #Scepter ul:nth-child(2) a:nth-child(1):hover {
+#section2-2 #profile #Scepter ul:nth-child(2) a:nth-child(1):hover {
   background: #4267b2;
   transition: .5s ease-in-out;
 }
 
-#sectoin2-2 #profile #Scepter ul:nth-child(2) a:nth-child(2):hover {
+#section2-2 #profile #Scepter ul:nth-child(2) a:nth-child(2):hover {
   background: #24292e;
   transition: .5s ease-in-out;
 }
 
-#sectoin2-2 #profile #Scepter ul:nth-child(2) a:nth-child(3):hover {
+#section2-2 #profile #Scepter ul:nth-child(2) a:nth-child(3):hover {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   background-image: radial-gradient(circle at 30% 107%, rgb(253, 244, 151) 0%, rgb(253, 244, 151) 5%, rgb(253, 89, 73) 45%, rgb(214, 36, 159) 60%, rgb(40, 90, 235) 90%);
   transition: 1s ease-in-out;
 }
 
 /*+++  JOVAN  +++*/
-#sectoin2-2 #profile #Jovan {
+#section2-2 #profile #Jovan {
   background-image: url("../Images/st02.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -767,7 +799,7 @@ nav .close.active {
   transition: .3s ease-in-out;
 }
 
-#sectoin2-2 #profile #Jovan #jovan-account {
+#section2-2 #profile #Jovan #jovan-account {
   position: absolute;
   text-align: center;
   height: 120px;
@@ -777,7 +809,7 @@ nav .close.active {
   transition: .4s ease-in-out;
 }
 
-#sectoin2-2 #profile #Jovan #jovan-account::before {
+#section2-2 #profile #Jovan #jovan-account::before {
   content: '';
   position: absolute;
   background: linear-gradient(to top left, purple 0%, #cc99ff 50%, #ff99cc 100%);
@@ -790,24 +822,24 @@ nav .close.active {
   z-index: 1;
 }
 
-#sectoin2-2 #profile #Jovan:hover #jovan-account::before {
+#section2-2 #profile #Jovan:hover #jovan-account::before {
   top: 0;
   transition: .2s ease-in-out;
   z-index: -1;
 }
 
-#sectoin2-2 #profile #Jovan:hover #jovan-account {
+#section2-2 #profile #Jovan:hover #jovan-account {
   bottom: 0;
   transition: .3s ease-in-out;
 }
 
-#sectoin2-2 #profile #Jovan:hover ul:nth-child(2) {
+#section2-2 #profile #Jovan:hover ul:nth-child(2) {
   position: relative;
   top: -10px;
 }
 
 /*+++  SCEPTER  +++*/
-#sectoin2-2 #profile #Scepter {
+#section2-2 #profile #Scepter {
   background-image: url("../Images/st03.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -821,7 +853,7 @@ nav .close.active {
   transition: .3s ease-in-out;
 }
 
-#sectoin2-2 #profile #Scepter #scepter-account {
+#section2-2 #profile #Scepter #scepter-account {
   position: absolute;
   text-align: center;
   height: 120px;
@@ -831,7 +863,7 @@ nav .close.active {
   transition: .4s ease-in-out;
 }
 
-#sectoin2-2 #profile #Scepter #scepter-account::before {
+#section2-2 #profile #Scepter #scepter-account::before {
   content: '';
   position: absolute;
   background: linear-gradient(to top left, purple 0%, #cc99ff 50%, #ff99cc 100%);
@@ -844,24 +876,24 @@ nav .close.active {
   z-index: 1;
 }
 
-#sectoin2-2 #profile #Scepter:hover #scepter-account::before {
+#section2-2 #profile #Scepter:hover #scepter-account::before {
   top: 0;
   transition: .2s ease-in-out;
   z-index: -1;
 }
 
-#sectoin2-2 #profile #Scepter:hover #scepter-account {
+#section2-2 #profile #Scepter:hover #scepter-account {
   bottom: 0;
   transition: .3s ease-in-out;
 }
 
-#sectoin2-2 #profile #Scepter:hover ul:nth-child(2) {
+#section2-2 #profile #Scepter:hover ul:nth-child(2) {
   position: relative;
   top: -10px;
 }
 
 /* TODO */
-/* #sectoin2-2 #students {
+/* #section2-2 #students {
   color: black;
   background: black;
   height: 70vh;
@@ -910,7 +942,7 @@ nav .close.active {
   background: linear-gradient(to top left, purple 0%, #cc99ff 50%, #ff99cc 100%);
 } */
 
-/* #sectoin2-2 #students #Lilian {
+/* #section2-2 #students #Lilian {
   background: red;
 } */
 /* TODO */
@@ -924,14 +956,33 @@ nav .close.active {
 #section3 {
   height: 100vh;
   width: 100%;
-  background: white;
-  color: black;
+  background: #242323;
+  color: white;
+}
+
+#section3 #section3-1 {
+  position: absolute;
+  width: 100%;
+}
+
+#section3-1 #courses .container span {
+  position: absolute;
+  top: 10px;
+  background: linear-gradient(to top left, #cc99ff 0%, #ff99cc 100%);
+  height: 3px;
+  width: 80px;
+  border-radius: 6px;
+}
+
+#section3-1 #courses .container h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  word-spacing: 10px;
+  font-family: san;
+  margin: 16px 16px 16px 0;
 }
 
 /*!  END Section 3  !*/
-
-
-
 
 
 
