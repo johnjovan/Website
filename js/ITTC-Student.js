@@ -44,3 +44,21 @@ AOS.init();
 //     clickable: true,
 //   },
 // });
+
+
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  slidesPerGroup: 1,
+  centeredSlides: true,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
