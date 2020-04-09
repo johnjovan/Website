@@ -45,8 +45,8 @@ body {
 }
 
 header {
-  position: sticky;
-  position: -webkit-sticky;
+  /* position: sticky;
+  position: -webkit-sticky; */
   max-width: 1400px;
   margin: auto;
   padding: 8px;
@@ -930,8 +930,8 @@ nav .close.active {
 /*=  Swiper  =*/
 #section3-2 #courses-slider {
   position: relative;
-  top: 110px;
-  height: 450px;
+  top: 120px;
+  height: 430px;
   width: 100%;
 }
 
@@ -970,17 +970,116 @@ nav .close.active {
 }
 
 #section3-2 .swiper-pagination-bullet {
-  background: red;
+  background: linear-gradient(to top left, purple 0%, #cc99ff 50%, #ff99cc 100%);
   padding: 7px;
   margin: 5px;
 }
 
-#section3-2 .swiper-pagination-bullet-active {
-  color: green;
-}
-
 /*!  END Section 3  !*/
 
+
+
+/*+  Section 4  +*/
+
+#section4 {
+  height: 100vh;
+  width: 100%;
+  background: #242323;
+  color: white;
+}
+
+#section4 #section4-1 {
+  position: absolute;
+  width: 100%;
+}
+
+#section4-1 #board .container span {
+  position: absolute;
+  top: 10px;
+  background: linear-gradient(to top left, #cc99ff 0%, #ff99cc 100%);
+  height: 3px;
+  width: 80px;
+  border-radius: 6px;
+}
+
+#section4-1 #board .container h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  word-spacing: 10px;
+  font-family: san;
+  margin: 16px 16px 16px 0;
+}
+
+
+/*+  END Section 4  +*/
+
+/*!  Section 5  !*/
+
+#section5 {
+  height: 100vh;
+  width: 100%;
+  background: #242323;
+  color: white;
+}
+
+#section5 #section5-1 {
+  position: absolute;
+  width: 100%;
+}
+
+#section5-1 #about .container span {
+  position: absolute;
+  top: 10px;
+  background: linear-gradient(to top left, #cc99ff 0%, #ff99cc 100%);
+  height: 3px;
+  width: 80px;
+  border-radius: 6px;
+}
+
+#section5-1 #about .container h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  word-spacing: 10px;
+  font-family: san;
+  margin: 16px 16px 16px 0;
+}
+
+
+/*!  END Section 5  !*/
+
+/*+  Section 6  +*/
+
+#section6 {
+  height: 100vh;
+  width: 100%;
+  background: black;
+  color: white;
+}
+
+#section6 #section6-1 {
+  position: absolute;
+  width: 100%;
+}
+
+#section6-1 #contact .container span {
+  position: absolute;
+  top: 10px;
+  background: linear-gradient(to top left, #cc99ff 0%, #ff99cc 100%);
+  height: 3px;
+  width: 80px;
+  border-radius: 6px;
+}
+
+#section6-1 #contact .container h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  word-spacing: 10px;
+  font-family: san;
+  margin: 16px 16px 16px 0;
+}
+
+
+/*+  END Section 6  +*/
 
 
 
