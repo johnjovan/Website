@@ -12,7 +12,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(transparent, #242323, black, black);
+  background: linear-gradient(transparent, #242323, black);
   border-radius: 6px;
 }
 
@@ -943,8 +943,12 @@ nav .close.active {
 #section3-2 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  color: black;
-  background: #fff;
+  color: whitesmoke;
+  background: #242323;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* padding: 20px 10px; */
+  flex-direction: column;
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -962,11 +966,68 @@ nav .close.active {
 }
 
 /* TODO Later */
+#section3-2 #html span img {
+  height: 50px;
+  width: 50px;
+}
+
+#section3-2 #css {
+  background-image: url("../Images/CSS.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#section3-2 #js {
+  background-image: url("../Images/JS.png");
+}
+
+#section3-2 #sql {
+  background-image: url("../Images/SQL.png");
+}
+
+#section3-2 #python {
+  background-image: url("../Images/Python.png");
+}
+
+#section3-2 #php {
+  background-image: url("../Images/Php.png");
+}
+
+#section3-2 #bootstrap {
+  background-image: url("../Images/Bootstrap.png");
+}
+
+#section3-2 .swiper-slide .courses-title h1 {
+  margin: 0;
+  color: white;
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+#section3-2 .swiper-slide .courses-title span {
+  right: 0;
+  position: relative;
+}
+
+#section3-2 .swiper-slide .courses-title {
+  height: 30%;
+  width: 100%;
+  background: #191919;
+  padding: 40px 30px;
+}
+
+#section3-2 .swiper-slide .courses-text {
+  background: rgb(136, 135, 135);
+  color: black;
+  height: 70%;
+  width: 100%;
+}
+
+/* TODO Later */
 #section3-2 .swiper-pagination {
   position: relative;
   padding: 20px;
   height: 20px;
-  color: red;
 }
 
 #section3-2 .swiper-pagination-bullet {
@@ -1052,13 +1113,29 @@ nav .close.active {
 #section6 {
   height: 100vh;
   width: 100%;
-  background: black;
   color: white;
+  position: absolute;
 }
 
 #section6 #section6-1 {
   position: absolute;
+  top: 0;
+  height: 50vh;
   width: 100%;
+  background: #242323;
+}
+
+#section6-1 #contact {
+  background: #242323;
+  width: 100%;
+}
+
+#section6 #section6-2 {
+  position: absolute;
+  bottom: 0;
+  height: 50vh;
+  width: 100%;
+  background: black;
 }
 
 #section6-1 #contact .container span {
