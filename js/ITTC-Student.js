@@ -50,7 +50,7 @@ var swiper = new Swiper('.swiper-container', {
   slidesPerView: 3,
   spaceBetween: 30,
   slidesPerGroup: 1,
-  centeredSlides: true,
+  // centeredSlides: true,
   loop: true,
   loopFillGroupWithBlank: true,
   // autoplay: {

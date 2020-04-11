@@ -966,18 +966,31 @@ nav .close.active {
 }
 
 /* TODO Later */
-#section3-2 #html span img {
+#section3-2 .courses-title span img {
+  position: absolute;
+  right: 10px;
   height: 50px;
   width: 50px;
+  margin-left: 20px;
 }
 
-#section3-2 #css {
+#section3-2 #js span img {
+  height: 70px;
+  width: 70px;
+}
+
+#section3-2 #sql span img {
+  height: 40px;
+  width: 80px;
+}
+
+/* #section3-2 #css {
   background-image: url("../Images/CSS.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
-#section3-2 #js {
+/* #section3-2 #js {
   background-image: url("../Images/JS.png");
 }
 
@@ -995,32 +1008,34 @@ nav .close.active {
 
 #section3-2 #bootstrap {
   background-image: url("../Images/Bootstrap.png");
-}
+} */
 
 #section3-2 .swiper-slide .courses-title h1 {
   margin: 0;
   color: white;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: bolder;
-}
-
-#section3-2 .swiper-slide .courses-title span {
-  right: 0;
-  position: relative;
+  font-family: 'Libre Baskerville', serif;
 }
 
 #section3-2 .swiper-slide .courses-title {
   height: 30%;
   width: 100%;
-  background: #191919;
   padding: 40px 30px;
+  border-radius: 0px;
+  background: #191919;
+  box-shadow: inset 8px 8px 7px #0a0a0a,
+    inset -8px -8px 7px #282828;
 }
 
 #section3-2 .swiper-slide .courses-text {
-  background: rgb(136, 135, 135);
   color: black;
   height: 70%;
   width: 100%;
+  border-radius: 0px;
+  background: #a9a9a9;
+  box-shadow: inset -8px -8px 7px #444444,
+    inset 8px 8px 7px #ffffff;
 }
 
 /* TODO Later */
