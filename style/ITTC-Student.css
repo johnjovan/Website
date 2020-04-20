@@ -29,7 +29,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: white;
+  background: black;
   font-family: 'Cantarell', sans-serif;
   /* background: #242323; */
   /* background: url("../Images/Programming.png");
@@ -1163,14 +1163,6 @@ nav .close.active {
   width: 100%;
 }
 
-#section6 #section6-2 {
-  position: absolute;
-  bottom: 0;
-  height: 50vh;
-  width: 100%;
-  background: black;
-}
-
 #section6-1 #contact .container span {
   position: absolute;
   top: 10px;
@@ -1188,9 +1180,135 @@ nav .close.active {
   margin: 16px 16px 16px 0;
 }
 
-#footer img {
-  height: 100%;
+/*+  Contact Icon  +*/
+
+#section6-2 #contact-icon {
+  margin: 30px 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  top: 30%;
+  z-index: 1111;
+}
+
+#contact-icon ul {
+  margin: 0;
+  padding: 0;
+}
+
+#contact-icon ul li {
+  float: left;
+  position: relative;
+  list-style: none;
+  width: 75px;
+  height: 75px;
+  margin: 0 10px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  /* background: white; */
+}
+
+#contact-icon ul li a {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 55px;
+  color: white;
+  background: black;
+  font-size: 30px;
+  border-radius: 50%;
+}
+
+#contact-icon ul li::before,
+#contact-icon ul li::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  background: black;
+  border-radius: 50%;
+  filter: blur(20px);
+  opacity: 0;
+  transition: 1s;
+  z-index: -1;
+}
+
+#contact-icon ul li::after {
+  filter: blur(200px);
+}
+
+#contact-icon ul li:hover::before,
+#contact-icon ul li:hover::after {
+  opacity: 1;
+}
+
+#contact-icon ul li a .fab {
+  text-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  transition: .5s;
+  transform: rotateY(0deg) scale(0.8);
+  opacity: 0.5;
+}
+
+#contact-icon ul li a:hover .fab {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+#contact-icon ul li a:hover .fa-facebook-f {
+  color: white;
+}
+
+#contact-icon ul li a:hover .fa-twitter {
+  color: white;
+}
+
+#contact-icon ul li a:hover .fa-github {
+  color: white;
+}
+
+#contact-icon ul li a:hover .fa-instagram {
+  color: white;
+}
+
+#contact-icon ul li:nth-child(1) a,
+#contact-icon ul li:nth-child(1)::before,
+#contact-icon ul li:nth-child(1)::after {
+  background: #3b5998;
+}
+
+#contact-icon ul li:nth-child(2) a,
+#contact-icon ul li:nth-child(2)::before,
+#contact-icon ul li:nth-child(2)::after {
+  background: #00acee;
+}
+
+#contact-icon ul li:nth-child(3) a,
+#contact-icon ul li:nth-child(3)::before,
+#contact-icon ul li:nth-child(3)::after {
+  background: #24292e;
+}
+
+#contact-icon ul li:nth-child(4) a,
+#contact-icon ul li:nth-child(4)::before,
+#contact-icon ul li:nth-child(4)::after {
+  background-image: radial-gradient(circle at 30% 107%, rgb(253, 244, 151) 0%, rgb(253, 244, 151) 5%, rgb(253, 89, 73) 45%, rgb(214, 36, 159) 60%, rgb(40, 90, 235) 90%);
+}
+
+/*+  END Contact Icon  +*/
+
+#section6 #section6-2 {
+  position: absolute;
+  bottom: 0;
+  height: 50vh;
+  width: 100%;
+  /* background: linear-gradient(to bottom, #242323, black, black); */
+  background: black;
 }
 
 #section6-2 .row {
@@ -1206,6 +1324,52 @@ nav .close.active {
   width: 100%;
 }
 
+#footer img {
+  height: 100%;
+  width: 100%;
+}
+
+/* #section6-2 .col:nth-child(2) {
+  background: url("../Images/Circle.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+} */
+
+#section6-2 .col:nth-child(2) h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: san;
+  font-weight: bolder;
+  text-shadow: 1px 1px 20px darkgray;
+  letter-spacing: 1px;
+  cursor: default;
+}
+
+#footer p {
+  font-size: 14px;
+  color: gray;
+  font-weight: bolder;
+  font-family: san;
+  word-spacing: 1px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 34.5%;
+}
+
+#footer p span {
+  color: white;
+}
+
+/* TODO LATER */
+#enroll a {
+  color: red;
+}
 
 /*+  END Section 6  +*/
 
