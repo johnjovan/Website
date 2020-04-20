@@ -29,9 +29,13 @@ html {
 body {
   margin: 0;
   padding: 0;
-  /* background: #242323; */
-  background: black;
+  background: white;
   font-family: 'Cantarell', sans-serif;
+  /* background: #242323; */
+  /* background: url("../Images/Programming.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
 }
 
 /*!  Section 1  !*/
@@ -465,7 +469,6 @@ nav .close.active {
 
 #section2 {
   background: #242323;
-  /* background: white; */
   height: 137vh;
   color: white;
 }
@@ -1093,6 +1096,10 @@ nav .close.active {
   margin: 16px 16px 16px 0;
 }
 
+#section4 #section4-2 {
+  position: relative;
+  top: 100px;
+}
 
 /*+  END Section 4  +*/
 
@@ -1127,6 +1134,10 @@ nav .close.active {
   margin: 16px 16px 16px 0;
 }
 
+#section5 #section5-2 {
+  position: relative;
+  top: 100px;
+}
 
 /*!  END Section 5  !*/
 
@@ -1175,6 +1186,24 @@ nav .close.active {
   word-spacing: 10px;
   font-family: san;
   margin: 16px 16px 16px 0;
+}
+
+#footer img {
+  height: 100%;
+  width: 100%;
+}
+
+#section6-2 .row {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#section6-2 .col {
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 
