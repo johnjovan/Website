@@ -1348,7 +1348,85 @@ nav .close.active {
   cursor: default;
 }
 
-#footer p {
+/*?  FOOTER DIV 3  ?*/
+/* TODO LATER */
+#enroll {
+  height: 100%;
+  width: 100%;
+}
+
+.inquire:nth-child(1) {
+  height: 35%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inquire:nth-child(1) h3 {
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: 'Baloo Chettan 2', cursive;
+  margin: 0;
+}
+
+.inquire:nth-child(2) {
+  height: 30%;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  line-height: 130px;
+}
+
+#enroll .inquire:nth-child(2) a {
+  color: red;
+  border: 1px solid crimson;
+  padding: 20px 40px;
+}
+
+.inquire:nth-child(3) {
+  height: 35%;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  line-height: 180px;
+}
+
+.inquire:nth-child(3) a.policy {
+  margin: 0 12px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+  /* overflow: hidden; */
+}
+
+/* TODO LATER */
+/* .inquire:nth-child(3) a.policy::before {
+  content: '';
+  position: relative;
+  left: 5px;
+  height: 1px;
+  width: 65px;
+  bottom: 8px;
+  background: linear-gradient(to right, black, rgb(24, 23, 23), rgb(63, 61, 61), gray, white);
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  transition: .4s ease-out;
+  transition-duration: 750ms;
+  transition-timing-function: cubic-bezier(0.16, 1.10, 1, .9);
+  overflow: hidden;
+} */
+
+/* .inquire:nth-child(3) a.policy:hover::before {
+  left: 0;
+  transition: 750ms ease-in;
+  transition-duration: 750ms;
+  transition-timing-function: cubic-bezier(0.16, 1.10, 1, .9);
+} */
+
+/*!  Credits  */
+#footer #credits {
   font-size: 14px;
   color: gray;
   font-weight: bolder;
@@ -1358,18 +1436,15 @@ nav .close.active {
   align-items: center;
   display: flex;
   position: absolute;
-  bottom: 0;
+  bottom: 12px;
   left: 34.5%;
+  margin: 0;
 }
 
 #footer p span {
   color: white;
 }
 
-/* TODO LATER */
-#enroll a {
-  color: red;
-}
 
 /*+  END Section 6  +*/
 
