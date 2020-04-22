@@ -1180,8 +1180,78 @@ nav .close.active {
   margin: 16px 16px 16px 0;
 }
 
-/*+  Contact Icon  +*/
+/* TODO LATER  */
+/*!  CONTACT BOX  !*/
+#contact #contact-box {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 30vh;
+  padding: 0;
+}
 
+#contact-box .row {
+  height: 100%;
+  width: 100%;
+}
+
+#contact-box .col-lg-4 {
+  height: 100%;
+  width: 100%;
+  padding: 10px 15px;
+}
+
+#contact-box .col-lg-4 .box {
+  height: 100%;
+  width: 100%;
+  background: black;
+  padding: 10px 20px;
+  box-shadow: 2px 2px 10px gray;
+  opacity: .5;
+}
+
+#contact #location {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  height: 10vh;
+  width: 100%;
+  background: linear-gradient(to bottom, transparent, black);
+  opacity: .5;
+}
+
+#location .container h6 {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 30%;
+}
+
+#section6 #section6-2 {
+  position: absolute;
+  bottom: 0;
+  height: 50vh;
+  width: 100%;
+  /* background: linear-gradient(to bottom, #242323, black, black); */
+  background: black;
+}
+
+#section6-2 .row {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#section6-2 .col {
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/*+  FOOTER DIV 1  +*/
 #section6-2 #contact-icon {
   margin: 30px 30px;
   justify-content: center;
@@ -1300,41 +1370,11 @@ nav .close.active {
   background-image: radial-gradient(circle at 30% 107%, rgb(253, 244, 151) 0%, rgb(253, 244, 151) 5%, rgb(253, 89, 73) 45%, rgb(214, 36, 159) 60%, rgb(40, 90, 235) 90%);
 }
 
-/*+  END Contact Icon  +*/
-
-#section6 #section6-2 {
-  position: absolute;
-  bottom: 0;
-  height: 50vh;
-  width: 100%;
-  /* background: linear-gradient(to bottom, #242323, black, black); */
-  background: black;
-}
-
-#section6-2 .row {
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  width: 100%;
-}
-
-#section6-2 .col {
-  padding: 0;
-  height: 100%;
-  width: 100%;
-}
-
+/*!  FOOTER DIV 2  !*/
 #footer img {
   height: 100%;
   width: 100%;
 }
-
-/* #section6-2 .col:nth-child(2) {
-  background: url("../Images/Circle.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-} */
 
 #section6-2 .col:nth-child(2) h1 {
   position: absolute;
@@ -1348,8 +1388,7 @@ nav .close.active {
   cursor: default;
 }
 
-/*?  FOOTER DIV 3  ?*/
-/* TODO LATER */
+/*=  FOOTER DIV 3  =*/
 #enroll {
   height: 100%;
   width: 100%;
@@ -1364,41 +1403,176 @@ nav .close.active {
 }
 
 .inquire:nth-child(1) h3 {
-  font-size: 30px;
-  font-weight: bolder;
-  font-family: 'Baloo Chettan 2', cursive;
+  font-size: 26px;
+  font-weight: bold;
+  /* font-family: 'Baloo Chettan 2', cursive; */
+  font-family: san;
   margin: 0;
 }
 
 .inquire:nth-child(2) {
-  height: 30%;
+  height: 50%;
   width: 100%;
-  position: relative;
+  /* position: relative;
   text-align: center;
-  line-height: 130px;
+  line-height: 130px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+/*! ENROLL BUTTON  */
 #enroll .inquire:nth-child(2) a {
-  color: red;
-  border: 1px solid crimson;
-  padding: 20px 40px;
+  position: absolute;
+  top: 135px;
+  color: white;
+  display: block;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: san;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  overflow: hidden;
+  transition: .5s;
 }
+
+#enroll .inquire:nth-child(2) a:hover {
+  color: gray;
+  transition: .5s;
+}
+
+#enroll .inquire:nth-child(2) a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: -101%;
+  background: white;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+#enroll .inquire:nth-child(2) a:hover::before {
+  left: 100%;
+}
+
+#enroll .inquire:nth-child(2) a span:nth-child(odd) {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: white;
+  transition: 0.5s ease-in-out;
+}
+
+#enroll .inquire:nth-child(2) a span:nth-child(1) {
+  top: 0;
+  left: 50%;
+}
+
+#enroll .inquire:nth-child(2) a span:nth-child(3) {
+  bottom: 0;
+  right: 50%;
+}
+
+#enroll .inquire:nth-child(2) a:hover span:nth-child(1) {
+  top: 0;
+  left: -50%;
+}
+
+#enroll .inquire:nth-child(2) a:hover span:nth-child(3) {
+  bottom: 0;
+  right: -50%;
+}
+
+#enroll .inquire:nth-child(2) a span:nth-child(even) {
+  position: absolute;
+  display: block;
+  width: 2px;
+  height: 100%;
+  background: white;
+  transition: 0.5s ease-in-out;
+}
+
+#enroll .inquire:nth-child(2) a span:nth-child(2) {
+  top: 50%;
+  left: 0;
+}
+
+#enroll .inquire:nth-child(2) a span:nth-child(4) {
+  bottom: 50%;
+  right: 0;
+}
+
+#enroll .inquire:nth-child(2) a:hover span:nth-child(2) {
+  top: -50%;
+  left: 0;
+}
+
+#enroll .inquire:nth-child(2) a:hover span:nth-child(4) {
+  bottom: -50%;
+  right: 0;
+}
+
+/*!  END ENROLL BUTTON  !*/
 
 .inquire:nth-child(3) {
-  height: 35%;
+  height: 15%;
   width: 100%;
-  position: relative;
-  text-align: center;
-  line-height: 180px;
 }
 
-.inquire:nth-child(3) a.policy {
+.inquire:nth-child(3) ul {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+  padding-top: 13px;
+}
+
+.inquire:nth-child(3) ul li {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.inquire:nth-child(3) ul li a {
   margin: 0 12px;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 14px;
+  word-spacing: 2px;
   font-weight: bold;
+  font-family: 'Baloo Chettan 2', cursive;
   color: white;
-  /* overflow: hidden; */
+  padding: 10px 0;
+  position: relative;
+  transition: 0.5s;
+}
+
+.inquire:nth-child(3) ul li a span {
+  background: linear-gradient(to right, black, rgb(24, 23, 23), rgb(63, 61, 61), gray, white);
+  position: absolute;
+  left: -75px;
+  top: 30px;
+  height: 1px;
+  width: 60px;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+  transition: .4s ease-out;
+  transition-duration: 750ms;
+  transition-timing-function: cubic-bezier(0.16, 1.10, 1, .9);
+  overflow: hidden;
+}
+
+.inquire:nth-child(3) ul li a:hover {
+  color: gray;
+  transition: 0.5s;
+}
+
+.inquire:nth-child(3) a:hover span {
+  left: 0;
+  transition: 750ms ease-in;
+  transition-duration: 750ms;
+  transition-timing-function: cubic-bezier(0.16, 1.10, 1, .9);
 }
 
 /* TODO LATER */
