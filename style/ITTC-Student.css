@@ -1141,7 +1141,7 @@ nav .close.active {
 
 /*  TODO LATER  */
 #section5-2 .row {
-  border: 1px solid white;
+  /* border: 1px solid white; */
   height: 250px;
   width: 100%;
 }
@@ -1150,24 +1150,59 @@ nav .close.active {
   background-image: url("../Images/FB_IMG_1586781607186.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  margin: 10px 10px;
+  filter: grayscale(1);
+  transition-timing-function: cubic-bezier(1, 1, 1, .850);
+}
+
+#section5-2 #pt-1:hover {
+  filter: grayscale(0);
 }
 
 #section5-2 #pt-2 {
-  background-image: url("../Images/FB_IMG_1586781893069.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-#section5-2 #pt-3 {
   background-image: url("../Images/FB_IMG_1586782011484.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  margin: 10px 10px;
+  filter: grayscale(1);
+  transition-timing-function: cubic-bezier(1, 1, 1, .850);
+}
+
+#section5-2 #pt-2:hover {
+  filter: grayscale(0);
+}
+
+#section5-2 #pt-3 {
+  background-image: url("../Images/FB_IMG_1586781936602.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10px 10px;
+  filter: grayscale(1);
+  transition-timing-function: cubic-bezier(1, 1, 1, .850);
+}
+
+#section5-2 #pt-3:hover {
+  filter: grayscale(0);
 }
 
 #section5-2 #pt-4 {
-  background-image: url("../Images/FB_IMG_1586781936602.jpg");
+  background-image: url("../Images/FB_IMG_1586781893069.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  margin: 10px 10px;
+  filter: grayscale(1);
+  transition-timing-function: cubic-bezier(1, 1, 1, .850);
+}
+
+#section5-2 #pt-4:hover {
+  filter: grayscale(0);
+}
+
+#section5-2 .col h4 {
+  font-weight: bolder;
+  margin: 0;
+  font-family: san;
+  padding-top: 200px;
 }
 
 /*!  END Section 5  !*/
