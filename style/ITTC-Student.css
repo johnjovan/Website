@@ -1101,6 +1101,39 @@ nav .close.active {
   top: 100px;
 }
 
+/* TODO LATER */
+#section4-2 .col {
+  height: 120px;
+  background: linear-gradient(to bottom, black, transparent, black);
+  margin: 10px 10px;
+  padding: 60px 20px;
+}
+
+#section4-2 .col h4 {
+  margin: 0;
+  margin-left: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  font-family: san;
+}
+
+#section4-2 .col i {
+  font-size: 22px;
+  padding: 5px 5px;
+}
+
+#section4-2 .col ul {
+  list-style: none;
+}
+
+#section4-2 .col ul li {
+  float: left;
+}
+
+#section4-2 .col ul li:nth-child(2) {
+  float: right;
+}
+
 /*+  END Section 4  +*/
 
 /*!  Section 5  !*/
@@ -1141,7 +1174,6 @@ nav .close.active {
 
 /*  TODO LATER  */
 #section5-2 .row {
-  /* border: 1px solid white; */
   height: 250px;
   width: 100%;
 }
@@ -1198,11 +1230,17 @@ nav .close.active {
   filter: grayscale(0);
 }
 
+#section5-2 .col {
+  padding: 0;
+}
+
 #section5-2 .col h4 {
   font-weight: bolder;
   margin: 0;
   font-family: san;
-  padding-top: 200px;
+  padding-left: 10px;
+  padding-top: 203px;
+  background: linear-gradient(to bottom, transparent, transparent, transparent, transparent, transparent, transparent, transparent, black);
 }
 
 /*!  END Section 5  !*/
@@ -1260,6 +1298,7 @@ nav .close.active {
 #contact-box .row {
   height: 100%;
   width: 100%;
+  overflow: hidden;
 }
 
 #contact-box .col-lg-4 {
