@@ -1063,8 +1063,6 @@ nav .close.active {
 
 /*!  END Section 3  !*/
 
-
-
 /*+  Section 4  +*/
 
 #section4 {
@@ -1101,25 +1099,18 @@ nav .close.active {
   top: 100px;
 }
 
+#section4-2 h3 {
+  font-family: san;
+  font-weight: bold;
+  color: white;
+}
+
 /* TODO LATER */
 #section4-2 .col {
-  height: 120px;
+  height: 140px;
   background: linear-gradient(to bottom, black, transparent, black);
   margin: 10px 10px;
-  padding: 60px 20px;
-}
-
-#section4-2 .col h4 {
-  margin: 0;
-  margin-left: 10px;
-  font-size: 22px;
-  font-weight: bold;
-  font-family: san;
-}
-
-#section4-2 .col i {
-  font-size: 22px;
-  padding: 5px 5px;
+  padding: 60px 0 60px 0;
 }
 
 #section4-2 .col ul {
@@ -1130,9 +1121,51 @@ nav .close.active {
   float: left;
 }
 
-#section4-2 .col ul li:nth-child(2) {
+#section4-2 .col ul li i {
+  font-size: 30px;
+}
+
+#section4-2 .col ul li:nth-child(3) {
   float: right;
 }
+
+#section4-2 .col ul li:nth-child(1) i {
+  font-size: 30px;
+  position: relative;
+  top: -5px;
+  transition: .5s ease-in-out;
+}
+
+#section4-2 .col ul li h4 {
+  margin: 0;
+  /* margin-left: 10px; */
+  font-size: 22px;
+  font-weight: bold;
+  font-family: san;
+  transition: .5s ease-in-out;
+}
+
+#section4-2 .col:hover ul li:nth-child(1) i {
+  padding-left: 15px;
+  transform: scale(2);
+  transition: .5s ease-in-out;
+}
+
+#section4-2 .col:hover ul li h4 {
+  padding-left: 30px;
+}
+
+#section4-2 .col:hover .fas {
+  padding-right: 10px;
+}
+
+#section4-2 .col .fas {
+  font-size: 21px;
+  padding-right: 20px;
+  transition: .5s ease-in-out;
+}
+
+
 
 /*+  END Section 4  +*/
 
