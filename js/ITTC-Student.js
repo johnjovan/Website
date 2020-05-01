@@ -33,19 +33,6 @@ function resettext() {
 
 AOS.init();
 
-// TODO Later
-// var swiper = new Swiper('.swiper-container', {
-//   slidesPerView: 3,
-//   spaceBetween: 30,
-//   freeMode: false,
-//   loop: true,
-//   pagination: {
-//     el: '.swiper-pagination',
-//     clickable: true,
-//   },
-// });
-
-
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 3,
   spaceBetween: 30,
@@ -62,3 +49,7 @@ var swiper = new Swiper('.swiper-container', {
     clickable: true,
   },
 });
+
+setTimeout(function () {
+  $('.loader-bg').fadeToggle(1000);
+}, 3000);
