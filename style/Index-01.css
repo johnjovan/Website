@@ -1,11 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Amiri|Balsamiq+Sans|BioRhyme|Bitter|Bree+Serif|Cinzel|Crete+Round|DM+Mono|Fontdiner+Swanky|Inconsolata|Indie+Flower|Josefin+Sans|Josefin+Slab:700|Jost|Kanit|Libre+Baskerville|Libre+Caslon+Text|Modak|Montserrat|Montserrat+Subrayada|Neuton:700|Noto+Serif|Poppins|Quicksand|Raleway|Righteous|Roboto+Mono|Roboto+Slab|Rokkitt|Rubik|Special+Elite|Zilla+Slab&display=swap');
+
 * {
     margin: 0;
     padding: 0;
 }
 
+html,
 body {
-    background: #33334d;
-    color: white;
+    margin: 0;
+    padding: 0;
 }
 
 /* .loader-bg {
@@ -35,7 +38,8 @@ body {
 #section1 {
     height: 100vh;
     width: 100%;
-    background: url("../Images/Background-01.jpg");
+    background-blend-mode: screen;
+    background: linear-gradient(to bottom, black, black, transparent, black), url("../Images/Camera-07.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -91,18 +95,31 @@ body {
 header {
     height: 80px;
     width: 100%;
-    background: crimson;
     position: fixed;
     display: grid;
+    /* background: black;
+    opacity: .7; */
 }
 
 nav {
     margin: auto 20px auto 0;
 }
 
+nav span a {
+    position: relative;
+    left: 50px;
+}
+
+nav span a img {
+    position: relative;
+    height: 80px;
+    width: 150px;
+    margin: auto 20px;
+}
+
 ul {
     float: right;
-    margin: 0;
+    margin: 22px auto;
     list-style: none;
 }
 
@@ -112,11 +129,11 @@ ul li {
 }
 
 #section1 ul li a {
-    color: black;
-    font-size: 24px;
-
+    color: white;
+    font-size: 20px;
     padding: 4px 0px;
     text-decoration: none;
+    font-family: 'BioRhyme', serif;
 }
 
 nav #sidebar {
@@ -126,30 +143,30 @@ nav #sidebar {
 
 nav #sidebar span:nth-child(1) {
     display: block;
-    height: 2px;
-    width: 24px;
-    background: black;
-    margin-bottom: 3px;
+    height: 1px;
+    width: 26px;
+    background: white;
+    margin-bottom: 5px;
 }
 
 nav #sidebar span:nth-child(2) {
     display: block;
-    height: 2px;
-    width: 24px;
-    background: black;
-    margin-bottom: 3px;
+    height: 1px;
+    width: 26px;
+    background: white;
+    margin-bottom: 5px;
     position: relative;
-    right: -10px;
+    right: -8px;
     transition: .5s ease-in-out;
 }
 
 nav #sidebar span:nth-child(3) {
     display: block;
-    height: 2px;
-    width: 24px;
-    background: black;
+    height: 1px;
+    width: 26px;
+    background: white;
     position: relative;
-    right: -5px;
+    right: -4px;
     transition: .5s ease-in-out;
 }
 
@@ -163,35 +180,66 @@ nav #sidebar:hover span:nth-child(3) {
     transition: .5s ease-in-out;
 }
 
+#section1 .container div {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+    text-align: center;
+}
 
+#section1 .container h1 {
+    color: white;
+    font-family: 'BioRhyme', serif;
+    /* margin: 0; */
+}
+
+#section1 .container h1:nth-child(1) {
+    font-size: 40px;
+    font-family: 'BioRhyme', serif;
+    border: 2px solid white;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+}
+
+#section1 .container h1:nth-child(3) {
+    font-size: 100px;
+    font-family: 'Righteous', cursive;
+}
+
+#section1 .container h1:nth-child(2),
+#section1 .container h1:nth-child(4) {
+    font-size: 30px;
+    margin-bottom: 0;
+}
 
 
 #section2 {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background: pink;
 }
 
 #section3 {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background: violet;
 }
 
 #section4 {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background: lightcoral;
 }
 
 #section5 {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background: lightblue;
 }
 
 #section6 {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background: blue;
 }
@@ -199,13 +247,61 @@ nav #sidebar:hover span:nth-child(3) {
 
 
 
-/* @media (max-width: 1200px) {
+@media (max-width: 1200px) {
     header {
+        margin: 0px;
     }
-} */
+}
 
 @media (max-width: 800px) {
+    #sidebar {
+        position: absolute;
+        top: 32px;
+        right: 20px;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    nav span a img {
+        position: absolute;
+        left: -60px;
+        margin: 0;
+    }
+
+    ul {
+        height: 80px;
+        width: 100px;
+        margin: 0;
+    }
+
     ul li a {
         display: none;
+    }
+
+    #section1 .container {
+        margin: 0;
+    }
+
+    #section1 .container div {
+        position: absolute;
+        top: 45%;
+        left: 48%;
+        transform: translate(-45%, -48%);
+        text-align: center;
+    }
+
+    #section1 .container h1:nth-child(1) {
+        font-size: 5vw;
+    }
+
+    #section1 .container h1:nth-child(3) {
+        font-size: 14vw;
+    }
+
+    #section1 .container h1:nth-child(2),
+    #section1 .container h1:nth-child(4) {
+        font-size: 4vw;
     }
 }
