@@ -9,6 +9,8 @@ html,
 body {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 
@@ -126,7 +128,7 @@ header {
 header.sticky {
     height: 70px;
     /* background: rgba(250, 250, 250, 0.5); */
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, .8);
     transition: 0.6s;
 }
 
@@ -139,6 +141,16 @@ header.sticky ul {
 header.sticky nav span img {
     position: absolute;
     top: -40px;
+}
+
+#section1 header.sticky .active {
+    background: transparent;
+    transition: .6s;
+}
+
+#section1 header.sticky nav ul li a:hover {
+    background: transparent;
+    color: #919191;
 }
 
 nav {
@@ -157,18 +169,20 @@ nav span a img {
     margin: auto 20px;
 }
 
-ul {
+
+#section1 header ul {
     float: right;
     margin: 22px auto;
     list-style: none;
 }
 
-ul li {
+
+#section1 header ul li {
     display: inline-block;
     margin: 0 10px;
 }
 
-#section1 ul li a {
+#section1 header ul li a {
     color: white;
     font-size: 20px;
     padding: 3px 8px;
@@ -190,12 +204,12 @@ ul li {
     transition: .5s ease-in-out;
 }
 
-nav #sidebar {
+nav #sidebar-open {
     cursor: pointer;
     overflow: hidden;
 }
 
-nav #sidebar span:nth-child(1) {
+nav #sidebar-open span:nth-child(1) {
     display: block;
     height: 1px;
     width: 26px;
@@ -203,7 +217,7 @@ nav #sidebar span:nth-child(1) {
     margin-bottom: 5px;
 }
 
-nav #sidebar span:nth-child(2) {
+nav #sidebar-open span:nth-child(2) {
     display: block;
     height: 1px;
     width: 26px;
@@ -214,7 +228,7 @@ nav #sidebar span:nth-child(2) {
     transition: .5s ease-in-out;
 }
 
-nav #sidebar span:nth-child(3) {
+nav #sidebar-open span:nth-child(3) {
     display: block;
     height: 1px;
     width: 26px;
@@ -224,16 +238,91 @@ nav #sidebar span:nth-child(3) {
     transition: .5s ease-in-out;
 }
 
-nav #sidebar:hover span:nth-child(2) {
+nav #sidebar-open:hover span:nth-child(2) {
     right: 0;
     transition: .7s ease-in-out;
 }
 
-nav #sidebar:hover span:nth-child(3) {
+nav #sidebar-open:hover span:nth-child(3) {
     right: 0;
     transition: .5s ease-in-out;
 }
 
+/* TODO LATER */
+/*!  Sidebar  !*/
+#section1 #sidebar {
+    height: 100vh;
+    width: 35%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    /* background: rgba(0, 0, 150, .9); */
+    background: linear-gradient(purple, black);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1000;
+}
+
+#section1 #sidebar #sidebar-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    height: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 18px 12px;
+    cursor: pointer;
+}
+
+#section1 #sidebar-close .ion-android-close {
+    font-size: 33px;
+    color: white;
+}
+
+#section1 #sidebar ul {
+    list-style: none;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+/* TODO LATER */
+#section1 #sidebar ul li {
+    height: 50px;
+    width: 350px;
+    text-align: center;
+
+    margin: 10px 20px;
+    padding: 20px 60px;
+
+    border: 1px solid black;
+}
+
+#section1 #sidebar ul li a {
+    color: white;
+    font-size: 20px;
+    padding: 3px 8px;
+    text-decoration: none;
+    font-family: 'BioRhyme', serif;
+    transition: .5s ease-in-out;
+}
+
+#section1 #sidebar #social-media {
+    position: fixed;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+}
+
+/*!  Jumbotron  !*/
 #section1 .container div {
     position: absolute;
     top: 45%;
@@ -304,6 +393,12 @@ nav #sidebar:hover span:nth-child(3) {
 
 
 
+
+
+
+
+
+
 @media (max-width: 1200px) {
     header {
         margin: 0px;
@@ -312,18 +407,27 @@ nav #sidebar:hover span:nth-child(3) {
 
 @media (max-width: 800px) {
 
+    #section1::before,
+    #section1::after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 143px;
+        width: 100%;
+    }
+
     header.sticky nav span img {
         position: absolute;
         top: -5px;
     }
 
-    #sidebar {
+    #sidebar-open {
         position: absolute;
         top: 32px;
         right: 20px;
     }
 
-    header.sticky #sidebar {
+    header.sticky #sidebar-open {
         position: absolute;
         top: 35px;
         right: 0;
