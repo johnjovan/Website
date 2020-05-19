@@ -191,13 +191,13 @@ nav span a img {
     transition: .5s ease-in-out;
 }
 
-#section1 ul li a.active {
+#section1 header ul li a.active {
     background: black;
     color: white;
     border-radius: 5px;
 }
 
-#section1 ul li a:hover {
+#section1 header ul li a:hover {
     background: black;
     color: white;
     border-radius: 5px;
@@ -248,16 +248,14 @@ nav #sidebar-open:hover span:nth-child(3) {
     transition: .5s ease-in-out;
 }
 
-/* TODO LATER */
 /*!  Sidebar  !*/
 #section1 #sidebar {
     height: 100vh;
     width: 35%;
     position: fixed;
     top: 0;
-    right: 0;
-    /* background: rgba(0, 0, 150, .9); */
-    background: linear-gradient(purple, black);
+    right: -35%;
+    background: url("../Images/Black-and-Box.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -292,34 +290,59 @@ nav #sidebar-open:hover span:nth-child(3) {
     margin: 0;
 }
 
-/* TODO LATER */
 #section1 #sidebar ul li {
     height: 50px;
     width: 350px;
     text-align: center;
-
-    margin: 10px 20px;
-    padding: 20px 60px;
-
-    border: 1px solid black;
+    margin: 30px 20px;
+    padding: 10px 40px;
+    box-shadow: 0px 0px 10px gray;
+    transition: all .7s;
 }
 
+#section1 #sidebar ul li:hover {
+    background: rgba(0, 0, 0, .9);
+    box-shadow: 0px 0px 10px white;
+}
+
+#section1 #sidebar ul li:nth-child(1) {
+    background: black;
+}
+
+/* TODO LATER */
 #section1 #sidebar ul li a {
     color: white;
     font-size: 20px;
     padding: 3px 8px;
     text-decoration: none;
     font-family: 'BioRhyme', serif;
-    transition: .5s ease-in-out;
+}
+
+#section1 #sidebar ul li a:first-of-type(1) {
+    color: red;
 }
 
 #section1 #sidebar #social-media {
-    position: fixed;
-    bottom: 40px;
+    font-size: 20px;
+    position: absolute;
+    left: 40px;
+    bottom: 110px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 35%;
+}
+
+#section1 #social-media div {
+    margin: 0 20px;
+}
+
+#section1 #sidebar #last-sidebar {
+    position: absolute;
+    left: 30px;
+    bottom: 70px;
+    color: white;
+    font-size: 14px;
 }
 
 /*!  Jumbotron  !*/
@@ -445,13 +468,13 @@ nav #sidebar-open:hover span:nth-child(3) {
         margin: 0;
     }
 
-    ul {
+    #section1 header ul {
         height: 80px;
         width: 100px;
         margin: 0;
     }
 
-    ul li a {
+    #section1 header ul li a {
         display: none;
     }
 
@@ -478,5 +501,13 @@ nav #sidebar-open:hover span:nth-child(3) {
     #section1 .container h1:nth-child(2),
     #section1 .container h1:nth-child(4) {
         font-size: 4vw;
+    }
+
+    #section1 #sidebar {
+        height: 100vh;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        right: -100%;
     }
 }
