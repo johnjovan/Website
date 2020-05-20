@@ -309,7 +309,6 @@ nav #sidebar-open:hover span:nth-child(3) {
     background: black;
 }
 
-/* TODO LATER */
 #section1 #sidebar ul li a {
     color: white;
     font-size: 20px;
@@ -318,15 +317,22 @@ nav #sidebar-open:hover span:nth-child(3) {
     font-family: 'BioRhyme', serif;
 }
 
-#section1 #sidebar ul li a:first-of-type(1) {
-    color: red;
+#section1 #sidebar ul li i {
+    color: white;
+    font-size: 16px;
+    margin-right: 5px;
+    transition: all .4s;
+}
+
+#section1 #sidebar ul li:hover i {
+    margin-left: 15px;
+    transform: scale(1.5);
 }
 
 #section1 #sidebar #social-media {
-    font-size: 20px;
     position: absolute;
     left: 40px;
-    bottom: 110px;
+    bottom: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -334,13 +340,24 @@ nav #sidebar-open:hover span:nth-child(3) {
 }
 
 #section1 #social-media div {
-    margin: 0 20px;
+    margin: 0 10px;
+}
+
+#section1 #social-media .sidebar-link a i {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all .4s;
+}
+
+#section1 #social-media .sidebar-link i:hover {
+    transform: scale(1.5);
 }
 
 #section1 #sidebar #last-sidebar {
     position: absolute;
-    left: 30px;
-    bottom: 70px;
+    left: 58px;
+    bottom: 35px;
     color: white;
     font-size: 14px;
 }
@@ -509,5 +526,21 @@ nav #sidebar-open:hover span:nth-child(3) {
         position: fixed;
         top: 0;
         right: -100%;
+    }
+
+    #section1 #sidebar #sidebar-close {
+        position: absolute;
+        top: 3px;
+        right: -2px;
+    }
+
+    #section1 #sidebar ul li {
+        width: 80vw;
+    }
+
+    #section1 #sidebar #last-sidebar {
+        position: absolute;
+        left: 38px;
+        bottom: 35px;
     }
 }

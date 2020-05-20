@@ -9,15 +9,6 @@ window.addEventListener("scroll", function () {
     header.classList.toggle("sticky", window.scrollY > 100);
 });
 
-// $(document).ready(function () {
-//     $("#sidebar-open").click(function () {
-//         $("#sidebar").slideToggle();
-//     });
-//     $("#sidebar-close").click(function () {
-//         $("#sidebar").slideToggle();
-//     });
-// });
-
 //!  Sidebar  !// 
 var t1 = new TimelineMax({
     paused: true
@@ -27,7 +18,7 @@ t1.to("#sidebar", 0.4, {
     right: "0%",
 });
 
-t1.staggerFrom(".sidebar-link", 0.4, {
+t1.staggerFrom(".sidebar-link, .fas", 0.4, {
     opacity: 0
 }, 0.1, "-=0.2");
 
