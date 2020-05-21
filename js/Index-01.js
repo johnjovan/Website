@@ -1,4 +1,4 @@
-//!  Sidebar  !// 
+//!  Background Loader  !// 
 setTimeout(function () {
     $('.loader-bg').fadeToggle(100);
 }, 2000);
