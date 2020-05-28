@@ -84,16 +84,17 @@
         <div class="container">
             <div class="row">
                 <!-- TODO LATER -->
-                <div class="col-sm-6">
-                    <img data-tilt data-tilt-max="50" data-tilt-speed="400" data-tilt-perspective="500"
-                        src="Images/Photography-01.jpg" alt="">
+                <div class="col-sm-6" data-aos="zoom-in" data-aos-easing="ease-in-sine">
+                    <img class="photography-img" src="Images/Photography-01.jpg" alt="">
                 </div>
-                <div class="col-sm-6">
-                    <h1>Title</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem libero sit aliquid
-                        ratione aut ducimus quas voluptates repudiandae illo, aliquam ipsam at nisi molestiae natus rem
-                        maiores illum voluptatem laudantium eum nesciunt tempore expedita quam cumque! Voluptatum
-                        repellendus nulla quis nihil odit excepturi rerum quae, ipsam veritatis aperiam minima adipisci.
+                <div class="col-sm-6" data-aos="fade-left" data-aos-offset="150" data-aos-easing="ease-in-sine">
+                    <h1>Photography</h1>
+                    <p>Photography is the art, application and practice of creating durable images by recording light or
+                        other electromagnetic radiation, either electronically by means of an image sensor, or
+                        chemically by means of a light-sensitive material such as photographic film. It is employed in
+                        many fields of science, manufacturing (e.g., photolithography), and business, as well as its
+                        more direct uses for art, film and video production, recreational purposes, hobby, and mass
+                        communication.
                     </p>
                 </div>
             </div>
@@ -102,7 +103,16 @@
 
     <section id="section3">
         <div class="container">
-            <h1>ON PROGRESS...</h1>
+            <!-- TODO LATER -->
+            <div class="gallery-menu">
+                <ul>
+                    <li class="active" data-filter="*">All</li>
+                    <li data-filter=".sunset">Sunset</li>
+                    <li data-filter=".model">Modelling</li>
+                    <li data-filter=".rainy">Rainy Day</li>
+                    <li data-filter=".my-shots">Own Shots</li>
+                </ul>
+            </div>
         </div>
     </section>
 
@@ -126,13 +136,16 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <!--!  jQuery !-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-    <!--!  Tilt.js !-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
     <!--!  2 Script for Sidebar  !-->
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--!  Animate on Scroll  !-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!--!  Grade.js !-->
     <script src="https://unpkg.com/grade-js/docs/dist/grade.js"></script>
+    <!--!  Tilt.js !-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
     <!--!  Script Code  !-->
     <script src="js/Index-01.js"></script>
 </body>

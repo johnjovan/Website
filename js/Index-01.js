@@ -9,6 +9,14 @@ window.addEventListener("scroll", function () {
     header.classList.toggle("sticky", window.scrollY > 100);
 });
 
+//!  Animate on Scroll  !// 
+AOS.init({
+    delay: 800, // values from 0 to 3000, with step 50ms
+    duration: 3000, // values from 0 to 3000, with step 50ms
+    easing: 'ease-in-out'
+}
+);
+
 //!  Sidebar  !// 
 var t1 = new TimelineMax({
     paused: true
@@ -31,3 +39,9 @@ $(document).on("click", "#sidebar-open", function () {
 $(document).on("click", "#sidebar-close", function () {
     t1.reversed(!t1.reversed());
 });
+
+//!  Tilt.js  !// 
+$('.photography-img').tilt({
+    glare: true,
+    maxGlare: .5
+})
