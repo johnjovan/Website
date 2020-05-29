@@ -404,6 +404,7 @@ nav #sidebar-open:hover span:nth-child(3) {
 #section2 {
     height: 100%;
     width: 100%;
+    background: #ff9f80;
 }
 
 #section2 .container .row {
@@ -456,16 +457,69 @@ nav #sidebar-open:hover span:nth-child(3) {
 
 
 
-
 /*=  End Section 2  =*/
 
 /*=  Section 3  =*/
 #section3 {
     height: 100%;
     width: 100%;
-    background: violet;
+    background: green;
+    padding: 30px 40px;
 }
 
+#section3 .container .gallery-menu {
+    text-align: center;
+    padding-top: 30px;
+    border: 1px solid white;
+}
+
+#section3 .container .gallery-menu ul {
+    margin: 20px auto;
+    background: red;
+}
+
+#section3 .container .gallery-menu ul li {
+    display: inline-block;
+    margin: 10px 10px;
+    list-style: none;
+    padding: 10px 15px;
+    border: 1px solid black;
+    border-radius: 3px;
+    cursor: pointer;
+    background: purple;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5 ease;
+    transition: all .5s ease;
+}
+
+#section3 .gallery {
+    width: 100%;
+    border: 1px solid white;
+    padding: 20px 60px;
+}
+
+#section3 .gallery .photo {
+    width: 300px;
+    margin: 10px 10px;
+}
+
+#section3 .gallery .sunset img {
+    height: 250px;
+    width: 350px;
+}
+
+#section3 .gallery .model img {
+    height: 400px;
+    width: 300px;
+    /* margin: 10px 20px; */
+}
+
+#section3 .gallery .rainy img {
+    height: 250px;
+    width: 350px;
+}
 
 
 
@@ -503,6 +557,7 @@ nav #sidebar-open:hover span:nth-child(3) {
 
 @media (max-width: 800px) {
 
+    /*=  Section 1  =*/
     #section1::before,
     #section1::after {
         display: none;
@@ -595,4 +650,22 @@ nav #sidebar-open:hover span:nth-child(3) {
         left: 38px;
         bottom: 35px;
     }
+
+
+
+
+
+    /*=  Section 2  =*/
+    #section2 {
+        overflow: hidden;
+    }
+
+    #section2 .col-sm-6:nth-child(2) {
+        height: 440px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+
 }

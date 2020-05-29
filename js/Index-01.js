@@ -14,8 +14,7 @@ AOS.init({
     delay: 800, // values from 0 to 3000, with step 50ms
     duration: 3000, // values from 0 to 3000, with step 50ms
     easing: 'ease-in-out'
-}
-);
+});
 
 //!  Sidebar  !// 
 var t1 = new TimelineMax({
@@ -44,4 +43,20 @@ $(document).on("click", "#sidebar-close", function () {
 $('.photography-img').tilt({
     glare: true,
     maxGlare: .5
-})
+});
+
+//!  Isotope  !//
+$('.gallery').isotope({
+    itemSelector: '.photo',
+    layoutMode: 'fitRows'
+});
+$('.gallery-menu ul li').click(function () {
+    $('.gallery-menu ul li').removeClass('active');
+    $(this).addClass('active');
+
+    var selector = $(this).attr('data-filter');
+    $('.gallery').isotope({
+        filter: selector
+    });
+    return false;
+});
