@@ -48,7 +48,7 @@ $('.photography-img').tilt({
 //!  Isotope  !//
 $('.gallery').isotope({
     itemSelector: '.photo',
-    layoutMode: 'fitRows'
+    layoutMode: 'masonry'
 });
 $('.gallery-menu ul li').click(function () {
     $('.gallery-menu ul li').removeClass('active');

@@ -404,7 +404,7 @@ nav #sidebar-open:hover span:nth-child(3) {
 #section2 {
     height: 100%;
     width: 100%;
-    background: #ff9f80;
+    /* background: #ff9f80; */
 }
 
 #section2 .container .row {
@@ -450,39 +450,36 @@ nav #sidebar-open:hover span:nth-child(3) {
     font-family: san;
 }
 
-
-
-
-
-
-
-
 /*=  End Section 2  =*/
 
 /*=  Section 3  =*/
 #section3 {
     height: 100%;
     width: 100%;
-    background: green;
     padding: 30px 40px;
+    padding-bottom: 0;
+    /* background: #ff9f80; */
+}
+
+#section3 .gallery {
+    width: 100%;
+    padding: 20px 60px;
 }
 
 #section3 .container .gallery-menu {
     text-align: center;
     padding-top: 30px;
-    border: 1px solid white;
 }
 
 #section3 .container .gallery-menu ul {
     margin: 20px auto;
-    background: red;
 }
 
 #section3 .container .gallery-menu ul li {
     display: inline-block;
     margin: 10px 10px;
     list-style: none;
-    padding: 10px 15px;
+    padding: 8px 15px;
     border: 1px solid black;
     border-radius: 3px;
     cursor: pointer;
@@ -494,33 +491,46 @@ nav #sidebar-open:hover span:nth-child(3) {
     transition: all .5s ease;
 }
 
-#section3 .gallery {
-    width: 100%;
-    border: 1px solid white;
-    padding: 20px 60px;
+#section3 .container .gallery-menu li.active {
+    background: black;
+    color: purple;
+}
+
+
+#section3 .container .gallery-menu ul li:hover {
+    background: black;
+    color: purple;
 }
 
 #section3 .gallery .photo {
     width: 300px;
-    margin: 10px 10px;
+    margin: 5px 10px;
+    padding: 0;
 }
 
 #section3 .gallery .sunset img {
     height: 250px;
-    width: 350px;
+    width: 330px;
+    padding: 0 10px;
 }
 
 #section3 .gallery .model img {
     height: 400px;
-    width: 300px;
-    /* margin: 10px 20px; */
+    width: 330px;
+    padding: 0 10px;
 }
 
 #section3 .gallery .rainy img {
     height: 250px;
-    width: 350px;
+    width: 330px;
+    padding: 0 10px;
 }
 
+#section3 .gallery .own img {
+    height: 350px;
+    width: 330px;
+    padding: 0 10px;
+}
 
 
 
@@ -666,6 +676,36 @@ nav #sidebar-open:hover span:nth-child(3) {
         top: 0;
         left: 0;
     }
+
+
+
+
+
+
+    /*=  Section 3  =*/
+    #section3 {
+        padding: 0;
+    }
+
+    #section3 .gallery {
+        padding: 0;
+        padding-bottom: 10px;
+    }
+
+    #section3 .gallery .photo {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    #section3 .gallery .photo img {
+        padding: 0;
+        width: 330px;
+    }
+
+
+
+
+
 
 
 }
