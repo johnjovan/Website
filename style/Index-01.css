@@ -14,7 +14,6 @@ body {
     background: rgb(22, 22, 22);
 }
 
-
 .loader-bg {
     position: fixed;
     z-index: 10000;
@@ -59,6 +58,18 @@ body {
     }
 }
 
+section .container .title {
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'BioRhyme', serif;
+    color: #ff9f80;
+    padding-top: 70px;
+}
+
+section .container .photos {
+    padding-top: 40px;
+}
+
 #section1 {
     height: 100vh;
     width: 100%;
@@ -71,6 +82,27 @@ body {
 }
 
 /*+  Wave  +*/
+#section1 #wavy {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 143px;
+    width: 100%;
+    background: url("../Images/Wave.png");
+    animation: wavy 30s linear infinite;
+    opacity: .3;
+}
+
+@keyframes wavy {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: 1360px;
+    }
+}
+
 #section1::before {
     content: '';
     position: absolute;
@@ -79,12 +111,10 @@ body {
     height: 143px;
     width: 100%;
     background: url("../Images/Wave.png");
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-    animation: animate 10s linear infinite;
+    animation: wavy-1 10s linear infinite;
 }
 
-@keyframes animate {
+@keyframes wavy-1 {
     0% {
         background-position: 0;
     }
@@ -102,11 +132,11 @@ body {
     height: 143px;
     width: 100%;
     background: url("../Images/Wave.png");
-    animation: animate-reverse 20s linear infinite;
+    animation: wavy-reverse 20s linear infinite;
     opacity: .5;
 }
 
-@keyframes animate-reverse {
+@keyframes wavy-reverse {
     0% {
         background-position: 1360px;
     }
@@ -170,13 +200,11 @@ nav span a img {
     margin: auto 20px;
 }
 
-
 #section1 header ul {
     float: right;
     margin: 22px auto;
     list-style: none;
 }
-
 
 #section1 header ul li {
     display: inline-block;
@@ -458,7 +486,6 @@ nav #sidebar-open:hover span:nth-child(3) {
     width: 100%;
     padding: 30px 40px;
     padding-bottom: 0;
-    /* background: #ff9f80; */
 }
 
 #section3 .gallery {
@@ -468,7 +495,6 @@ nav #sidebar-open:hover span:nth-child(3) {
 
 #section3 .container .gallery-menu {
     text-align: center;
-    padding-top: 30px;
 }
 
 #section3 .container .gallery-menu ul {
@@ -480,10 +506,11 @@ nav #sidebar-open:hover span:nth-child(3) {
     margin: 10px 10px;
     list-style: none;
     padding: 8px 15px;
-    border: 1px solid black;
+    border: 1px solid #ff9f80;
     border-radius: 3px;
     cursor: pointer;
-    background: purple;
+    color: #ff9f80;
+    background: black;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     -ms-transition: all .5s ease;
@@ -492,14 +519,15 @@ nav #sidebar-open:hover span:nth-child(3) {
 }
 
 #section3 .container .gallery-menu li.active {
-    background: black;
-    color: purple;
+    background: #ff9f80;
+    color: black;
+    border: 1px solid black;
 }
 
-
 #section3 .container .gallery-menu ul li:hover {
-    background: black;
-    color: purple;
+    background: #ff9f80;
+    color: black;
+    border: 1px solid black;
 }
 
 #section3 .gallery .photo {
@@ -568,6 +596,8 @@ nav #sidebar-open:hover span:nth-child(3) {
 @media (max-width: 800px) {
 
     /*=  Section 1  =*/
+
+    #section1 #wavy,
     #section1::before,
     #section1::after {
         display: none;
@@ -670,6 +700,14 @@ nav #sidebar-open:hover span:nth-child(3) {
         overflow: hidden;
     }
 
+    #section2 .container .row {
+        padding: 0 20px;
+    }
+
+    #section2 .col-sm-6:nth-child(1) {
+        padding: 0;
+    }
+
     #section2 .col-sm-6:nth-child(2) {
         height: 440px;
         position: relative;
@@ -690,6 +728,7 @@ nav #sidebar-open:hover span:nth-child(3) {
     #section3 .gallery {
         padding: 0;
         padding-bottom: 10px;
+        margin: 0 auto;
     }
 
     #section3 .gallery .photo {
@@ -699,7 +738,7 @@ nav #sidebar-open:hover span:nth-child(3) {
 
     #section3 .gallery .photo img {
         padding: 0;
-        width: 330px;
+        width: 100%;
     }
 
 
