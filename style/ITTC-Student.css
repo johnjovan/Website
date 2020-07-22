@@ -1189,7 +1189,7 @@ section .line::before {
 }
 
 #section5-2 #pt-1 {
-  background-image: url("../Images/FB_IMG_1586781607186.jpg");
+  background-image: url("../Images/team-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 10px 10px;
@@ -1202,7 +1202,7 @@ section .line::before {
 }
 
 #section5-2 #pt-2 {
-  background-image: url("../Images/FB_IMG_1586782011484.jpg");
+  background-image: url("../Images/team-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 10px 10px;
@@ -1215,7 +1215,7 @@ section .line::before {
 }
 
 #section5-2 #pt-3 {
-  background-image: url("../Images/FB_IMG_1586781936602.jpg");
+  background-image: url("../Images/team-3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: 10px 10px;
@@ -1228,7 +1228,7 @@ section .line::before {
 }
 
 #section5-2 #pt-4 {
-  background-image: url("../Images/FB_IMG_1586781893069.jpg");
+  background-image: url("../Images/team-4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   margin: 10px 10px;
@@ -1861,6 +1861,16 @@ section .line::before {
     width: 320px;
   }
 
+  /*+  End Section 3  +*/
+
+  /*+  Section 5  +*/
+  
+
+
+
+
+  /*+  End Section 5  +*/
+
 
 
 
@@ -1902,12 +1912,7 @@ section .line::before {
 
 /* TODO LATER */
 @media (max-width: 574px){
-  #section5 #section5-2 #teamwork{
-    flex-direction: column;
-  }
-
-  #section5 #section5-2 .team1,
-  #section5 #section5-2 .team2{
-    flex-direction: column;
-  }
+  /* #section5 #section5-2 #teamwork{
+    width: 80%;
+  } */
 }
