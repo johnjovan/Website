@@ -1192,6 +1192,7 @@ section .line::before {
   background-image: url("../Images/team-1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
   margin: 10px 10px;
   filter: grayscale(1);
   transition-timing-function: cubic-bezier(1, 1, 1, .850);
@@ -1205,6 +1206,7 @@ section .line::before {
   background-image: url("../Images/team-2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
   margin: 10px 10px;
   filter: grayscale(1);
   transition-timing-function: cubic-bezier(1, 1, 1, .850);
@@ -1217,6 +1219,7 @@ section .line::before {
 #section5-2 #pt-3 {
   background-image: url("../Images/team-3.jpg");
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   margin: 10px 10px;
   filter: grayscale(1);
@@ -1231,6 +1234,7 @@ section .line::before {
   background-image: url("../Images/team-4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center center;
   margin: 10px 10px;
   filter: grayscale(1);
   transition-timing-function: cubic-bezier(1, 1, 1, .850);
@@ -1261,14 +1265,10 @@ section .line::before {
   height: 100%;
   width: 100%;
   color: white;
-  position: absolute;
-  border: 1px solid white;
 }
 
 #section6 #section6-1 {
-  position: absolute;
-  top: 0;
-  height: 50vh;
+  height: 100%;
   width: 100%;
   background: #242323;
 }
@@ -1277,15 +1277,6 @@ section .line::before {
   background: #242323;
   width: 100%;
   overflow: hidden;
-}
-
-#section6-1 #contact .container span {
-  position: absolute;
-  top: 10px;
-  background: linear-gradient(to top left, #cc99ff 0%, #ff99cc 100%);
-  height: 3px;
-  width: 80px;
-  border-radius: 6px;
 }
 
 #section6-1 #contact .container h1 {
@@ -1368,7 +1359,8 @@ section .line::before {
   height: 100%;
   width: 70%;
   float: right;
-  padding: 55px 10px;
+  padding: 30% 10px;
+  
 }
 
 #contact-box .info h6 {
@@ -1377,8 +1369,8 @@ section .line::before {
 
 /*+  CONTACT LOCATION  +*/
 #contact #location {
-  position: absolute;
-  bottom: 0;
+  /* position: absolute;
+  bottom: 0; */
   text-align: center;
   height: 10vh;
   width: 100%;
@@ -1388,7 +1380,7 @@ section .line::before {
 }
 
 #location .container h6 {
-  position: absolute;
+  /* position: absolute; */
   text-align: center;
   bottom: 0;
   left: 30%;
@@ -1404,8 +1396,6 @@ section .line::before {
 }
 
 #section6 #section6-2 {
-  position: absolute;
-  bottom: 0;
   height: 50vh;
   width: 100%;
   background: black;
@@ -1754,9 +1744,9 @@ section .line::before {
   justify-content: center;
   align-items: center;
   display: flex;
-  position: absolute;
+  /* position: absolute;
   bottom: 12px;
-  left: 34.5%;
+  left: 34.5%; */
   margin: 0;
 }
 
@@ -1779,6 +1769,14 @@ section .line::before {
 @media (max-width: 1200px) {
   header {
     margin: 20px;
+  }
+}
+
+/* TODO LATER */
+@media (max-width: 990px){
+  #section6 #section6-2 #contact-box .row{
+    flex-direction: column;
+    height: 100%;
   }
 }
 
@@ -1834,11 +1832,17 @@ section .line::before {
   }
 
   #section-1-1 #container1 {
-    padding: 0;
+    padding: 80px 20px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
   }
 
   #section-1-1 #container1 div h2 {
-    font-size: 16vw;
+    font-size: 12vw;
   }
 
 
@@ -1863,8 +1867,19 @@ section .line::before {
 
   /*+  End Section 3  +*/
 
+  /*+  Section 4  +*/
+
+
+
+
+  /*+  End Section 4  +*/
+
+
   /*+  Section 5  +*/
-  
+  #section5 #section5-2 .row{
+    flex-direction: column;
+    height: 100%;
+  }
 
 
 
@@ -1885,7 +1900,7 @@ section .line::before {
 
 
   /*+  CONTACT  +*/
-  #section6 {
+  /* #section6 {
     flex-direction: column;
   }
 
@@ -1902,17 +1917,8 @@ section .line::before {
   #section6 #section6-2 #contact-icon ul li {
     float: left;
     color: red;
-  }
-
-
-
-}
-
-
-
-/* TODO LATER */
-@media (max-width: 574px){
-  /* #section5 #section5-2 #teamwork{
-    width: 80%;
   } */
+
+
+
 }
