@@ -1268,7 +1268,7 @@ section .line::before {
 }
 
 #section6 #section6-1 {
-  height: 100%;
+  height: 50vh;
   width: 100%;
   background: #242323;
 }
@@ -1332,7 +1332,10 @@ section .line::before {
 #contact-box .box .container {
   height: 100%;
   width: 100%;
-  padding: 0;
+  /* padding: 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #contact-box .icon-info {
@@ -1360,7 +1363,6 @@ section .line::before {
   width: 70%;
   float: right;
   padding: 30% 10px;
-  
 }
 
 #contact-box .info h6 {
@@ -1774,7 +1776,12 @@ section .line::before {
 
 /* TODO LATER */
 @media (max-width: 990px){
-  #section6 #section6-2 #contact-box .row{
+  #section6 #section6-1,
+  #section6 #section6-2{
+    height: 100%;
+  }
+
+  #section6 #section6-1 #contact-box .row{
     flex-direction: column;
     height: 100%;
   }
