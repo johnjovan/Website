@@ -439,7 +439,7 @@ nav #sidebar-open:hover span:nth-child(3) {
     padding: 50px 20px;
 }
 
-#section2 .col-sm-6 {
+#section2 .about-row {
     transition: 1000ms ease-in-out;
     transition-duration: 1000ms;
     transition-timing-function: cubic-bezier(.17, .67, .83, .67);
@@ -452,7 +452,7 @@ nav #sidebar-open:hover span:nth-child(3) {
     margin-top: 10px;
 }
 
-#section2 .col-sm-6:nth-child(2) {
+#section2 .about-row:nth-child(2) {
     height: 260px;
     position: relative;
     top: 20px;
@@ -466,13 +466,13 @@ nav #sidebar-open:hover span:nth-child(3) {
     margin-top: 20px;
 }
 
-#section2 .col-sm-6 h1 {
+#section2 .about-row h1 {
     font-size: 48px;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
 
-#section2 .col-sm-6 p {
+#section2 .about-row p {
     font-size: 18px;
     font-weight: 500;
     font-family: san;
@@ -491,7 +491,7 @@ nav #sidebar-open:hover span:nth-child(3) {
 #section3 .gallery {
     width: 100%;
     padding: 20px 60px;
-}
+}   
 
 #section3 .container .gallery-menu {
     text-align: center;
@@ -591,6 +591,14 @@ nav #sidebar-open:hover span:nth-child(3) {
     header {
         margin: 0px;
     }
+
+    #section2 .about-row:nth-child(2) {
+        height: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
 }
 
 @media (max-width: 800px) {
@@ -692,9 +700,6 @@ nav #sidebar-open:hover span:nth-child(3) {
     }
 
 
-
-
-
     /*=  Section 2  =*/
     #section2 {
         overflow: hidden;
@@ -702,22 +707,19 @@ nav #sidebar-open:hover span:nth-child(3) {
 
     #section2 .container .row {
         padding: 0 20px;
+        flex-direction: column;
     }
 
-    #section2 .col-sm-6:nth-child(1) {
+    #section2 .about-row:nth-child(1) {
         padding: 0;
     }
 
-    #section2 .col-sm-6:nth-child(2) {
-        height: 440px;
+    #section2 .about-row:nth-child(2) {
+        height: 100%;
         position: relative;
         top: 0;
         left: 0;
     }
-
-
-
-
 
 
     /*=  Section 3  =*/
@@ -742,9 +744,12 @@ nav #sidebar-open:hover span:nth-child(3) {
     }
 
 
+}
 
-
-
-
-
+@media (max-width: 380px) {
+    #section2 .about-row h1 {
+        font-size: 12vw;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+    }
 }

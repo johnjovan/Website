@@ -60,3 +60,14 @@ $('.gallery-menu ul li').click(function () {
     });
     return false;
 });
+
+// Magnific Popup
+$(document).ready(function () {
+    $(".image-content").magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        gallery: {
+            enabled: true
+        }
+    });
+});
